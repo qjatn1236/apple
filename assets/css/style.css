@@ -77,14 +77,40 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 
 body { background: #000; color: #f5f5f7; }
 
+.content { width: 980px; margin: 0 auto; }
+
 header .nav_list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-line-pack: center; align-content: center; max-width: 980px; margin: 0 auto; }
 
 header .nav_item { -webkit-box-sizing: border-box; box-sizing: border-box; display: inline-block; position: relative; height: 44px; vertical-align: top; }
 
 header .nav_item .link_search { background-image: url(./../images/search.svg); background-size: 15px 88px; background-repeat: no-repeat; width: 15px; display: inline-block; }
 
-header .nav_item a { font-size: 12px; font-weight: 400; line-height: 3.66667; letter-spacing: -.01em; color: #f5f5f7; position: relative; z-index: 1; display: inline-block; padding: 0 8px; height: 44px; opacity: .8; }
+header .nav_item a { font-size: 12px; font-weight: 400; line-height: 3.66667; letter-spacing: -.01em; color: #f5f5f7; position: relative; display: inline-block; padding: 0 8px; height: 44px; opacity: .8; -webkit-transition: .3s; transition: .3s; }
 
-header .group_pdr { display: -webkit-box; display: -ms-flexbox; display: flex; background-color: rgba(29, 29, 31, 0.72); }
+header .nav_item a:hover { opacity: 1; }
+
+header .group_pdr { height: 66px; background-color: rgba(29, 29, 31, 0.72); border-bottom: 1px solid rgba(255, 255, 255, 0.24); }
 
 header .group_pdr .pdr_inner { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 100%; max-width: 980px; margin: 0 auto; padding: 0 8px; }
+
+header .group_pdr .pdr_title { margin: 14px 0 -14px; }
+
+header .group_pdr .title { font-size: 21px; line-height: 1.14286; font-weight: 600; letter-spacing: .011em; cursor: default; display: block; float: left; padding: 0; height: 52px; white-space: nowrap; }
+
+header .group_pdr .sub_title { font-size: 12px; font-weight: 400; opacity: 0.55; }
+
+header .group_pdr .pdr_menu { padding-top: 34px; font-size: 12px; }
+
+header .group_pdr .pdr_menu a { margin-left: 24px; }
+
+header .group_pdr .summary { opacity: 0.55; }
+
+header .pdr_banner { font-size: 14px; padding: 16px 0px; text-align: center; background-color: rgba(29, 29, 31, 0.72); }
+
+header .pdr_banner .link_shop { color: #2997ff; }
+
+main { overflow: hidden; }
+
+.sc_main_pdr .vod_wrap { width: 1400px; height: 732px; }
+
+.sc_main_pdr video { top: 68px; display: block; width: 1400px; height: 420px; position: relative; left: 680px; margin-left: -700px; }

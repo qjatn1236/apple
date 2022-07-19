@@ -1,0 +1,18 @@
+main{
+    overflow: hidden;
+}
+.sc_main_pdr{
+    .vod_wrap{
+        width: 1400px;
+        height: 732px;
+    }
+    video{
+        top: 68px;
+        display: block;
+        width: 1400px;
+        height: 420px;
+        position: relative;
+        left: 680px;
+        margin-left: -700px;
+    }
+}
