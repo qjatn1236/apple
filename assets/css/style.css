@@ -147,7 +147,9 @@ main { overflow: hidden; }
 
 .sc_main_chip .vod_wrap { display: block; width: 1754px; height: 1056px; position: relative; left: 50%; margin-left: -877px; margin-top: -158px; z-index: -1; }
 
-.sc_parts { max-width: 1390px; margin: -144px auto 0; padding-left: 24px; padding-right: 24px; }
+.grid { max-width: 1390px; margin-left: auto; margin-right: auto; grid-column-gap: 24px; grid-row-gap: 24px; padding-top: 0; padding-bottom: 0; display: -ms-grid; display: grid; -ms-grid-columns: (minmax(0, 1fr))[12]; grid-template-columns: repeat(12, minmax(0, 1fr)); }
+
+.sc_parts { margin: -144px auto; }
 
 .sc_parts .title { font-size: 21px; line-height: 1.19048; font-weight: 600; letter-spacing: .011em; padding: 40px; padding-bottom: 0; }
 
@@ -157,7 +159,7 @@ main { overflow: hidden; }
 
 .sc_parts .main_msg { font-size: 19px; line-height: 1.4211; font-weight: 600; letter-spacing: .012em; margin-top: 26px; }
 
-.sc_parts .cpu_area { position: relative; min-height: 700px; border-radius: 30px; overflow: hidden; background: -webkit-gradient(linear, left bottom, right top, from(#194189), color-stop(25%, #3B4980), to(#8738A7)); background: linear-gradient(to right top, #194189 0%, #3B4980 25%, #8738A7 100%); }
+.sc_parts .cpu_area { grid-column: span 12; position: relative; min-height: 700px; border-radius: 30px; overflow: hidden; background: -webkit-gradient(linear, left bottom, right top, from(#194189), color-stop(25%, #3B4980), to(#8738A7)); background: linear-gradient(to right top, #194189 0%, #3B4980 25%, #8738A7 100%); }
 
 .sc_parts .cpu_area .sub_title { max-width: 600px; }
 
@@ -167,7 +169,7 @@ main { overflow: hidden; }
 
 .sc_parts .cpu_area .title_point { color: #c48cfc; }
 
-.sc_parts .gpu_area { margin-top: 20px; position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; z-index: 0; -webkit-box-sizing: border-box; box-sizing: border-box; overflow: hidden; background-color: #151516; border-radius: 30px; min-height: 700px; }
+.sc_parts .gpu_area { grid-column: span 12; margin-top: 20px; position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; z-index: 0; -webkit-box-sizing: border-box; box-sizing: border-box; overflow: hidden; background-color: #151516; border-radius: 30px; min-height: 700px; }
 
 .sc_parts .gpu_area .title { z-index: 1; }
 
