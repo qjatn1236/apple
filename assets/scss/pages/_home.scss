@@ -88,8 +88,6 @@ main{
 .sc_main_chip{
     padding-top: 170px;
 
-    .main_title{    
-    }
     .main_chip_picture{
         display: block;
         width: 169px;
@@ -122,5 +120,112 @@ main{
         margin-top: -158px;
         z-index: -1;
     }
-
 }
+
+.sc_parts{
+    max-width: 1390px;
+    margin: -144px auto 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    .title{
+        font-size: 21px;
+        line-height: 1.19048;
+        font-weight: 600;
+        letter-spacing: .011em;
+        padding: 40px;
+        padding-bottom: 0;
+    }
+    .text_area{
+        padding-left: 40px;
+        max-width: 50%;
+        margin: 60px 0;
+        z-index: 1;
+    }
+    .sub_title{
+        font-size: 80px;
+        line-height: 1.15;
+        font-weight: 700;
+        letter-spacing: -.015em;
+    }
+    .main_msg{
+        font-size: 19px;
+        line-height: 1.4211;
+        font-weight: 600;
+        letter-spacing: .012em;        
+        margin-top: 26px;
+    }
+
+    .cpu_area{
+        position: relative;
+        min-height: 700px;
+        border-radius: 30px;
+        overflow: hidden;
+        background: linear-gradient(to right top, #194189 0%, #3B4980 25%, #8738A7 100%);    
+        .sub_title{
+            max-width: 600px;
+        }
+        .main_msg{
+            max-width: 470px;
+        }
+        .sc_cpu_picture{
+            display: block;
+            width: 696px;
+            height: 553px;
+            position: absolute;
+            left: 50%;
+            bottom: 28px;
+        }
+        .title_point{
+            color: #c48cfc;
+        }
+    }
+
+    .gpu_area{
+        margin-top: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        z-index: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+        background-color: #151516;
+        border-radius:30px;
+        min-height: 700px;
+        .title{
+            z-index: 1;
+        }
+        .text_area{
+            width: 100%;
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+            max-width: unset;
+            padding-right: 40px;
+            margin: 0;
+            .title_box1{
+                flex-basis: 50%;
+                max-width: 580px;
+            }
+            .title_box2{
+                flex-basis: 50%;
+                width: 50%;
+                margin-left: 8.33333%;
+                flex-basis: 41.66667%;
+                max-width: 41.66667%;
+            }
+        }
+        .title_point{
+            color: #4693ad;
+        }
+        .vod_wrap{
+            position: absolute;
+            z-index: 0;
+        }
+        video{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+} // sc_parts
+
