@@ -59,15 +59,19 @@
             <div class="main_title">
                 <h1 class="title">MacBook Air</h1>
                 <h2 class="sub_title">Air의 흐름을 바꾸다.</h2>
-                <p class="msg">M1 칩을 탑재한 MacBook&nbsp;Air는 탁월한 휴대성을 자랑하는 노트북입니다. 민첩하고 빠른 성능에 조용한 팬리스 디자인 그리고 아름다운
+                <p class="main_msg">M1 칩을 탑재한 MacBook&nbsp;Air는 탁월한 휴대성을 자랑하는 노트북입니다. 민첩하고 빠른 성능에 조용한 팬리스 디자인 그리고 아름다운
                     Retina&nbsp;디스플레이를
                     갖추고 있죠.얇은 두께와 온종일 가는 배터리 덕분에 MacBook&nbsp;Air는 어디든 가볍고 빠르게 들고 다닐 수 있습니다.
                 </p>
             </div>
-            <div class="img_box">
-                <img src="./assets/images/m1chip.jpg" alt="">
+            <div class="main_pdr_chip">
+                <picture class="pdr_chip_picture">
+                    <source srcset="./assets/images/m1chip.jpg" media="min-width:767px">
+                    <source srcset="./assets/images/m1chip_small.jpg" media="min-width:1024px">
+                    <img src="./assets/images/m1chip.jpg" alt="">
+                </picture>
+                <p class="pdr_chip_text">막강한 성능의 Apple M1 칩 탑재</p>
             </div>
-            <p class="text">막강한 성능의 Apple M1 칩 탑재</p>
             <ul class="main_pdr_list">
                 <li class="main_pdr_item">₩1,390,000부터</li>
                 <li class="main_pdr_item"><a href="#">이벤트 신청하기</a></li>
@@ -76,14 +80,24 @@
 
         <section class="sc_main_chip content">
             <div class="main_title">
-                <h2 class="title"><img src="./assets/images/applem1.png" alt=""></h2>
+                <h2 class="title">
+                    <picture class="main_chip_picture">
+                        <source srcset="./assets/images/applem1.png" media="min-width:767px">
+                        <source srcset="./assets/images/applem1_medium.png" media="min-width:1024px">
+                        <source srcset="./assets/images/applem1_small.png" media="min-width:1024px">
+                        <img src="./assets/images/applem1.png" alt="">
+                    </picture>
+                </h2>
                 <p class="sub_title">칩 하나에 담은 거대한 도약</p>
-                <p class="msg">M1은 Mac용으로 Apple에서 직접 디자인한 최초의 칩입니다. Apple Silicon은 자그마한 칩 하나에 CPU, GPU, Neural Engine,
+                <p class="main_msg">M1은 Mac용으로 Apple에서 직접 디자인한 최초의 칩입니다. Apple Silicon은 자그마한 칩 하나에 CPU, GPU, Neural
+                    Engine,
                     I/O 등 수많은 요소가 통합되어 있죠. 160억 개라는 엄청난 수의 트랜지스터가 집적된 M1 칩은 발군의 성능과 맞춤형 기술, 믿을 수 없는 전력 효율성을 선사합니다. 가히
                     Mac 개발에 있어 획기적인 도약이라 할 수 있죠.
                 </p>
             </div>
-            <video muted autoplay src="./assets/images/chip.mp4"></video>
+            <div class="vod_wrap">
+                <video muted autoplay src="./assets/images/chip.mp4"></video>
+            </div>
         </section>
 
         <section class="sc_chip">
