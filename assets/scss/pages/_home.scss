@@ -147,10 +147,14 @@ main{
     border-radius:30px;
     min-height: 700px;
 }
-
+.grid_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
 .sc_parts{
     margin: -144px auto;
-
     .title{
     font-size: 21px;
     line-height: 1.19048;
@@ -159,12 +163,7 @@ main{
     padding: 40px;
     padding-bottom: 0;
     }
-    .text_area{
-        padding-left: 40px;
-        // max-width: 50%;
-        margin: 60px 0;
-        z-index: 1;
-    }
+
     .sub_title{
         font-size: 80px;
         line-height: 1.15;
@@ -183,13 +182,19 @@ main{
         grid-column: span 12;
         overflow: hidden;
         background: linear-gradient(to right top, #194189 0%, #3B4980 25%, #8738A7 100%);    
+        .text_area{
+            padding-left: 40px;
+            // max-width: 50%;
+            margin: 60px 0;
+            z-index: 1;
+        }
         .sub_title{
             max-width: 600px;
         }
         .main_msg{
             max-width: 470px;
         }
-        .sc_cpu_picture{
+        .cpu_picture{
             display: block;
             width: 696px;
             height: 553px;
@@ -215,7 +220,9 @@ main{
             align-items: center;
             max-width: unset;
             padding-right: 40px;
-            margin: 0;
+            padding-left: 40px;
+            margin: 60px 0;
+            z-index: 1;
             .title_box1{
                 flex-basis: 50%;
                 max-width: 580px;
@@ -244,26 +251,91 @@ main{
     .battery_area{
         grid-column: span 8;
         background: linear-gradient(to bottom, #203025 0%, #151516 100%);
-        .center{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-grow: 1;
+        .text_area{
+            z-index: 1;
         }
         .text_area{
             justify-content: flex-start;
             max-width: 630px;
             margin: 0 auto;
             margin-bottom: 65px;
-
+            text-align: center;
         }
     }
 
     .efficiency_area{
         grid-column: span 4;
         background: linear-gradient(225deg, #1623A6 0%, #3343D4 29%, #175EAC 73%, #176682 100%);
+        .text_area{
+            padding-left: 40px;
+            // max-width: 50%;
+            margin: 60px 0;
+            z-index: 1;
+        }
+        .text_area{
+            padding-left: 0;
+        }
+        .title_point{
+            color: rgba(255,255,255,0.6)
+        }
+        .link_wrap{
+            padding: 0 40px 40px 40px;
+        }
+        .link_efficiency{
+            display: inline-block;
+            background-color: transparent;
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 100px;
+            padding: 9px 17px;
+            font-weight: 600;
+            white-space: normal;
+            font-size: 17px;
+        }
+    }
+    .learning_area{
+        grid-column: span 12;
+        background: linear-gradient(to bottom, #061420 0%, #151516 100%);
+        .text_area{
+            margin-top: 60px;
+            margin-bottom: 60px;
+            margin-left: 50%;
+        }
+        .main_msg{
+            padding: 0 40px;
+            font-size: 32px;
+            line-height: 1.21875;
+            font-weight: 600;
+            letter-spacing: .004em;
+        }
+        .title_point{
+            color: #a1a1a6;
+        }
+        .learning_picture{
+            display: block;
+            width: 696px;
+            height: 553px;
+            position: absolute;
+            right: 50%;
+            bottom: -249px;
+            transform: translateY(-50%); 
+        }
+    }
+    .os_area{
+        background-color: #000;
+        background-image: radial-gradient(at 100% 0%, rgba(46,110,173,0.99) 0px, transparent 50%),radial-gradient(at 92% 64%, rgba(11,30,80,0.69) 0px, transparent 50%),radial-gradient(at 35% 0%, #0c215a 0px, transparent 50%),radial-gradient(at 0% 0%, #06061d 0px, transparent 50%),radial-gradient(at 76% 0%, #061232 0px, transparent 50%),radial-gradient(at 86% 47%, #0b0f32 0px, transparent 50%),radial-gradient(at 43% 59%, #0b0f32 0px, transparent 50%),radial-gradient(at 6% 100%, #311f47 0px, transparent 50%),radial-gradient(at 42% 100%, #06061d 0px, transparent 50%),radial-gradient(at 1% 53%, #0b0f32 0px, transparent 50%),radial-gradient(at 100% 100%, #0c133b 0px, transparent 50%),radial-gradient(at 63% 100%, #1e1335 0px, transparent 50%),radial-gradient(at 20% 100%, #1e1335 0px, transparent 50%);
+        grid-column: span 12;
+        .os_picture{
+            display: block;
+            width: 696px;
+            height: 553px;
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            bottom: 28px;
+        }
+
     }
 
 }// 끝
-
  
