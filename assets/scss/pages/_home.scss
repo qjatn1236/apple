@@ -325,6 +325,28 @@ main{
         background-color: #000;
         background-image: radial-gradient(at 100% 0%, rgba(46,110,173,0.99) 0px, transparent 50%),radial-gradient(at 92% 64%, rgba(11,30,80,0.69) 0px, transparent 50%),radial-gradient(at 35% 0%, #0c215a 0px, transparent 50%),radial-gradient(at 0% 0%, #06061d 0px, transparent 50%),radial-gradient(at 76% 0%, #061232 0px, transparent 50%),radial-gradient(at 86% 47%, #0b0f32 0px, transparent 50%),radial-gradient(at 43% 59%, #0b0f32 0px, transparent 50%),radial-gradient(at 6% 100%, #311f47 0px, transparent 50%),radial-gradient(at 42% 100%, #06061d 0px, transparent 50%),radial-gradient(at 1% 53%, #0b0f32 0px, transparent 50%),radial-gradient(at 100% 100%, #0c133b 0px, transparent 50%),radial-gradient(at 63% 100%, #1e1335 0px, transparent 50%),radial-gradient(at 20% 100%, #1e1335 0px, transparent 50%);
         grid-column: span 12;
+        .text_wrap{
+            display: flex;
+            flex-grow: 1;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .text_area{
+            max-width: 50%;
+            flex-basis: 50%;
+            margin: 60px 0;
+            padding-left: 40px;
+        }
+        .sub_title{
+            max-width: 420px;
+            font-size: 56px;
+            line-height: 1.07143;
+            font-weight: 700;
+            letter-spacing: -.028em;
+        }
+        .main_msg{
+            max-width: 470px;
+        }
         .os_picture{
             display: block;
             width: 696px;
@@ -334,7 +356,13 @@ main{
             left: 50%;
             bottom: 28px;
         }
+    }
 
+    .animate_area{
+        grid-column: span 6;
+    }
+    .app_area{
+        grid-column: span 6;
     }
 
 }// 끝

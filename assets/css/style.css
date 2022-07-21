@@ -219,4 +219,16 @@ main { overflow: hidden; }
 
 .sc_parts .os_area { background-color: #000; background-image: radial-gradient(at 100% 0%, rgba(46, 110, 173, 0.99) 0px, transparent 50%), radial-gradient(at 92% 64%, rgba(11, 30, 80, 0.69) 0px, transparent 50%), radial-gradient(at 35% 0%, #0c215a 0px, transparent 50%), radial-gradient(at 0% 0%, #06061d 0px, transparent 50%), radial-gradient(at 76% 0%, #061232 0px, transparent 50%), radial-gradient(at 86% 47%, #0b0f32 0px, transparent 50%), radial-gradient(at 43% 59%, #0b0f32 0px, transparent 50%), radial-gradient(at 6% 100%, #311f47 0px, transparent 50%), radial-gradient(at 42% 100%, #06061d 0px, transparent 50%), radial-gradient(at 1% 53%, #0b0f32 0px, transparent 50%), radial-gradient(at 100% 100%, #0c133b 0px, transparent 50%), radial-gradient(at 63% 100%, #1e1335 0px, transparent 50%), radial-gradient(at 20% 100%, #1e1335 0px, transparent 50%); grid-column: span 12; }
 
+.sc_parts .os_area .text_wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.sc_parts .os_area .text_area { max-width: 50%; -ms-flex-preferred-size: 50%; flex-basis: 50%; margin: 60px 0; padding-left: 40px; }
+
+.sc_parts .os_area .sub_title { max-width: 420px; font-size: 56px; line-height: 1.07143; font-weight: 700; letter-spacing: -.028em; }
+
+.sc_parts .os_area .main_msg { max-width: 470px; }
+
 .sc_parts .os_area .os_picture { display: block; width: 696px; height: 553px; position: absolute; z-index: 1; left: 50%; bottom: 28px; }
+
+.sc_parts .animate_area { grid-column: span 6; }
+
+.sc_parts .app_area { grid-column: span 6; }
