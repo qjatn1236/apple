@@ -254,3 +254,23 @@ main { overflow: hidden; }
 .sc_parts .storage_area { grid-column: span 4; background: -webkit-gradient(linear, left bottom, right top, from(#604C7C), color-stop(50%, #257983), to(#20825A)); background: linear-gradient(to right top, #604C7C 0%, #257983 50%, #20825A 100%); }
 
 .sc_parts .security_area { grid-column: span 4; }
+
+.sc_retina { padding-top: 170px; }
+
+.sc_retina .title { font-size: 80px; line-height: 1.125; font-weight: 700; letter-spacing: .004em; color: #f5f5f7; margin-top: 41px; }
+
+.sc_retina .title_point { color: #a1a1a6; }
+
+.sc_retina .sub_title { font-size: 28px; line-height: 1.14286; font-weight: 500; letter-spacing: .007em; }
+
+.sc_retina .retina_picture_wrap { position: relative; margin: 70px 0; }
+
+.sc_retina .retina_picture_screen { display: block; width: 927px; height: 579px; position: relative; left: 50%; margin-left: -463.5px; top: 43px; position: absolute; z-index: 1; }
+
+.sc_retina .retina_picture_hdr { display: block; width: 1197px; height: 704px; position: relative; left: 50%; margin-left: -598.5px; }
+
+.sc_retina .color_area { grid-column: span 12; }
+
+.sc_retina .pixel_area { grid-column: span 6; }
+
+.sc_retina .truetone_area { grid-column: span 6; }

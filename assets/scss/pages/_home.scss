@@ -425,5 +425,58 @@ main{
         grid-column: span 4;
     }
 
-}// 끝
+}
  
+.sc_retina{
+    padding-top: 170px;
+    .title{
+        font-size: 80px;
+        line-height: 1.125;
+        font-weight: 700;
+        letter-spacing: .004em;
+        color: #f5f5f7;
+        margin-top:41px;
+    }
+    .title_point{
+        color: #a1a1a6;
+    }
+    .sub_title{
+        font-size: 28px;
+        line-height: 1.14286;
+        font-weight: 500;
+        letter-spacing: .007em;
+    }
+    .retina_picture_wrap{
+        position: relative;
+        margin:70px 0;
+    }
+    .retina_picture_screen{
+        display: block;
+        width: 927px;
+        height: 579px;
+        position: relative;
+        left: 50%;
+        margin-left: -463.5px;
+        top: 43px;
+        position: absolute;
+        z-index: 1;
+    }
+    .retina_picture_hdr{
+        display: block;
+        width: 1197px;
+        height: 704px;
+        position: relative;
+        left: 50%;
+        margin-left: -598.5px;
+    }
+
+    .color_area{
+        grid-column: span 12;
+    }
+    .pixel_area{
+        grid-column: span 6;
+    }
+    .truetone_area{
+        grid-column: span 6;
+    }
+}
