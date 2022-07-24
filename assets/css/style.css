@@ -153,7 +153,7 @@ main { overflow: hidden; }
 
 .grid_center { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
 
-.sc_parts { margin: -144px auto; }
+.sc_parts { margin: -144px auto 0; }
 
 .sc_parts .title { font-size: 21px; line-height: 1.19048; font-weight: 600; letter-spacing: .011em; padding: 40px; padding-bottom: 0; }
 
@@ -229,6 +229,28 @@ main { overflow: hidden; }
 
 .sc_parts .os_area .os_picture { display: block; width: 696px; height: 553px; position: absolute; z-index: 1; left: 50%; bottom: 28px; }
 
-.sc_parts .animate_area { grid-column: span 6; }
+.sc_parts .animate_area { grid-column: span 6; background-color: #000; background-image: radial-gradient(at 82% 30%, rgba(20, 20, 57, 0.46) 0px, transparent 50%), radial-gradient(at 100% 66%, #29183f 0px, transparent 50%), radial-gradient(at 100% 0%, #161339 0px, transparent 50%), radial-gradient(at 35% 0%, #21163b 0px, transparent 50%), radial-gradient(at 47% 59%, rgba(65, 40, 77, 0.76) 0px, transparent 50%), radial-gradient(at 1% 2%, #3b244c 0px, transparent 50%), radial-gradient(at 75% 1%, #1a1439 0px, transparent 50%), radial-gradient(at 100% 0%, #191439 0px, transparent 50%), radial-gradient(at 0% 99%, #694e6e 0px, transparent 50%), radial-gradient(at 0% 64%, rgba(103, 80, 109, 0.57) 0px, transparent 50%), radial-gradient(at 0% 24%, #694e6e 0px, transparent 50%), radial-gradient(at 100% 100%, #553c5d 0px, transparent 50%), radial-gradient(at 72% 100%, #1e1335 0px, transparent 50%), radial-gradient(at 35% 100%, #1e1335 0px, transparent 50%); }
 
-.sc_parts .app_area { grid-column: span 6; }
+.sc_parts .animate_area .text_area { padding: 0 40px; }
+
+.sc_parts .animate_area .main_msg { margin-top: 0.77em; }
+
+.sc_parts .animate_area .grid_bottom { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+
+.sc_parts .animate_area .bot_text_area { text-align: center; padding-left: 0; padding-right: 0; margin-right: auto; margin-left: auto; margin-bottom: 74px; max-width: 420px; }
+
+.sc_parts .app_area { grid-column: span 6; background-color: #000; background-image: radial-gradient(at 82% 30%, rgba(20, 20, 57, 0.46) 0px, transparent 50%), radial-gradient(at 100% 66%, #29183e 0px, transparent 50%), radial-gradient(at 35% 0%, #0f1138 0px, transparent 50%), radial-gradient(at 100% 0%, #0f1138 0px, transparent 50%), radial-gradient(at 47% 59%, rgba(35, 20, 57, 0.77) 0px, transparent 50%), radial-gradient(at 1% 2%, #14143d 0px, transparent 50%), radial-gradient(at 74% 0%, rgba(18, 40, 104, 0.9) 0px, transparent 50%), radial-gradient(at 100% 0%, #071541 0px, transparent 50%), radial-gradient(at 0% 64%, rgba(41, 26, 60, 0.8) 0px, transparent 50%), radial-gradient(at 0% 99%, #51395b 0px, transparent 50%), radial-gradient(at 0% 24%, rgba(27, 18, 54, 0.87) 0px, transparent 50%), radial-gradient(at 100% 100%, #654d6f 0px, transparent 50%), radial-gradient(at 72% 100%, #1e1335 0px, transparent 50%), radial-gradient(at 35% 100%, #1e1335 0px, transparent 50%); }
+
+.sc_parts .app_area .text_area { padding: 0 40px; }
+
+.sc_parts .app_area .main_msg { margin-top: 0.77em; }
+
+.sc_parts .app_area .grid_bottom { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+
+.sc_parts .app_area .app_picture { display: block; width: 481px; height: 388px; position: relative; left: 50%; margin-left: -240.5px; -webkit-transform: translate(-1px, 12px); transform: translate(-1px, 12px); margin-bottom: 74px; }
+
+.sc_parts .memory_area { grid-column: span 4; }
+
+.sc_parts .storage_area { grid-column: span 4; background: -webkit-gradient(linear, left bottom, right top, from(#604C7C), color-stop(50%, #257983), to(#20825A)); background: linear-gradient(to right top, #604C7C 0%, #257983 50%, #20825A 100%); }
+
+.sc_parts .security_area { grid-column: span 4; }
