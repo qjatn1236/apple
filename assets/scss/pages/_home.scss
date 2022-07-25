@@ -472,9 +472,23 @@ main{
 
     .color_area{
         grid-column: span 12;
+        position: relative;
+        .color_picture{
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            left: 0;
+        }
+        .typo_wrap{
+            position: relative;
+            z-index: 1;
+            font-size: 80px;
+        }
     }
+
     .pixel_area{
         grid-column: span 6;
+        background: #181725;
     }
     .truetone_area{
         grid-column: span 6;

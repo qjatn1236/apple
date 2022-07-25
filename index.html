@@ -301,7 +301,7 @@
         </section>
 
         <section class="sc_retina">
-            <div class="main_content content">
+            <div class="content">
                 <div class="main_title">
                     <h2 class="title">
                         <span class="title_point">Retina 디스플레이</span> 사실적인컬러 <br> 비현실적인 아름다움
@@ -329,23 +329,25 @@
             </div>
 
             <div class="grid">
-                <div class="color_area">
-                    <div class="main_typo">
-                        <h3>넓은 색영역(P3</h3>
-                        <p>더 넓은 색영역을 자랑하는 디스플레이.</p>
+                <div class="color_area grid_item">
+                    <div class="typo_wrap">
+                        <div class="main_typo">
+                            <h3>넓은 색영역(P3</h3>
+                            <p>더 넓은 색영역을 자랑하는 디스플레이.</p>
+                        </div>
+                        <div class="sub_typo">
+                            <span>25%</span>
+                            <span>더 풍부한 색상(sRGB 대비)</span>
+                        </div>
                     </div>
-                    <div class="sub_typo">
-                        <span>25%</span>
-                        <span>더 풍부한 색상(sRGB 대비)</span>
-                    </div>
-                    <picture>
+                    <picture class="color_picture">
                         <source srcset="./assets/images/retina_color_large.jpeg" media="min-width:734px">
                         <source srcset="./assets/images/retina_color_medium.jpeg" media="min-width:1023px">
                         <source srcset="./assets/images/retina_color_small.jpeg" media="min-width:1024px">
                         <img src="./assets/images/retina_color_large.jpeg" alt="">
                     </picture>
                 </div>
-                <div class="pixel_area">
+                <div class="pixel_area grid_item">
                     <div class="main_typo">
                         <h3>픽셀 밀도</h3>
                     </div>
@@ -357,7 +359,7 @@
                     </picture>
                     <p>선명하다.</p>
                 </div>
-                <div class="truetone_area">
+                <div class="truetone_area grid_item">
                     <div class="main_typo">
                         <h3>True Tone 기술</h3>
                         <p>눈이 즐겁고. 눈이 편하고.</p>
@@ -830,10 +832,11 @@
     </main>
 
     <footer id="footer">
+        <h2 class="blind">애플 하단</h2>
         <div class="footer_inner">
 
             <div class="benefits_wrap">
-                <div class="finance">
+                <div class="finance benefits_column">
                     <a href="#">
                         <div class="img_box"><img src="./assets/images/finance.svg" alt=""></div>
                         <div class="benefits_content">
@@ -843,7 +846,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="shipping">
+                <div class="shipping benefits_column">
                     <a href="#">
                         <div class="img_box"><img src="./assets/images/shipping.svg" alt=""></div>
                         <div class="benefits_content">
@@ -853,7 +856,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="help">
+                <div class="help benefits_column">
                     <a href="#">
                         <div class="img_box"><img src="./assets/images/help.svg" alt=""></div>
                         <div class="benefits_content">
@@ -866,152 +869,197 @@
                 </div>
             </div>
 
-            <ol class="reference_list">
-                <li class="Reference_item">
-                    테스트는 2020년 10월 Apple에서 Apple M1 칩 및 8코어 GPU를 탑재한 MacBook Air 시제품을 사용해 진행했으며, 해당 제품은 8GB RAM 및 512GB
-                    SSD로 구성되었습니다. Apple TV 앱 동영상 재생 테스트는 디스플레이의 밝기를 제일 어두운 상태로부터 8단계 밝게 한 상태에서 HD 1080p 콘텐츠를 재생하는 방식으로
-                    배터리 사용 시간을 측정했습니다. 배터리 사용 시간은 사용 패턴 및 설정에 따라 다를 수 있습니다. 자세한 내용은
-                    <a href="#">apple.com/kr/batteries</a>를 참고하십시오.
-                </li>
-                <li class="Reference_item">
-                    테스트는 2021년 8월과 9월에 Apple에서 JetStream 2, MotionMark 1.2 및 Speedometer 2.0 성능 벤치마크를 사용해 진행했습니다. Apple
-                    M1 및 배포 전 단계의 macOS Monterey가 설치된 MacBook Pro 13 시스템과 Intel Iris Xe Graphics 및 Windows 10 Pro가 설치된
-                    Intel Core i7 기반 PC 시스템, 배포 전 단계의 iPadOS 15이 설치된 iPad Pro 12.9(5세대)와 Intel Iris Xe Graphics 및
-                    Windows 10 Pro가 설치된 Intel Core i7 기반 PC 시스템 그리고 배포 전 단계의 iOS 15이 설치된 iPhone 12 Pro Max와 Android 11이
-                    설치된 Qualcomm Snapdragon 888 기반 스마트폰에서 배포 전 단계의 Safari 15 및 테스트 당시 기준 최신 안정 버전의 Chrome, Microsoft
-                    Edge, Firefox를 이용하여 테스트했습니다. 기기를 WPA2 Wi‑Fi 네트워크에 연결된 상태에서 테스트했습니다. 성능은 사용 방법, 시스템 설정, 네트워크 연결 및 기타
-                    요인에 따라 달라집니다.
-                </li>
-                <li class="Reference_item">
-                    1TB = 1조 바이트입니다. 실제 포맷된 용량은 더 적습니다.
-                </li>
-                <li class="Reference_item">
-                    속도는 이론적 처리량에 근거한 수치이며 실제 결과는 다를 수 있습니다.
-                </li>
-                <li class="Reference_item">
-                    화면 크기는 대각선 길이입니다.
-                </li>
-                <li class="Reference_item">
-                    테스트는 2022년 5월 Apple에서 Apple M2, 8코어 CPU, 8코어 GPU, 8GB RAM 및 256GB SSD를 탑재한 MacBook Air 시제품을 사용해
-                    진행했습니다. Apple TV 앱 동영상 재생 테스트는 디스플레이의 밝기를 제일 어두운 상태로부터 8단계 밝게 한 상태에서 HD 1080p 콘텐츠를 재생하는 방식으로 배터리 사용
-                    시간을 측정했습니다. 배터리 사용 시간은 사용 패턴 및 설정에 따라 다를 수 있습니다.
-                    자세한 내용은 <a href="#">apple.com/kr/batteries</a>를 참고하십시오.
-                </li>
-                <li class="Reference_item">
-                    테스트는 2022년 5월 Apple에서 Apple M2, 8코어 CPU, 8코어 GPU, 8GB RAM 및 256GB SSD를 탑재한 MacBook Air 시제품을 사용해
-                    진행했습니다. Apple TV 앱 동영상 재생 테스트는 디스플레이의 밝기를 제일 어두운 상태로부터 8단계 밝게 한 상태에서 HD 1080p 콘텐츠를 재생하는 방식으로 배터리 사용
-                    시간을 측정했습니다. 배터리 사용 시간은 사용 패턴 및 설정에 따라 다를 수 있습니다.
-                    자세한 내용은 <a href="#">apple.com/kr/batteries</a>를 참고하십시오.
-                </li>
-                <li class="Reference_item">
-                    테스트는 2021년 9월 Apple에서 Apple M1 Pro, 10코어 CPU, 16코어 GPU, 16GB RAM 및 1TB SSD를 탑재한 MacBook Pro 16 시제품을
-                    사용해 진행했습니다. Apple TV 앱 동영상 재생 테스트는 디스플레이의 밝기를 제일 어두운 상태로부터 8단계 밝게 한 상태에서 HD 1080p 콘텐츠를 재생하는 방식으로 배터리
-                    사용 시간을 측정했습니다. 배터리 사용 시간은 사용 패턴 및 설정에 따라 다를 수 있습니다.
-                    자세한 내용은 <a href="#">apple.com/kr/batteries</a>를 참고하십시오.
-                </li>
-                <li class="Reference_item">
-                    보상 판매 금액은 보상 판매되는 제품의 상태, 연도, 구성에 따라 달라집니다. 일부 기기는 보상 판매 대상이 아닙니다. 크레딧 또는 Apple Store Gift Card로 보상
-                    판매를 받으려면 최소 19세 이상이어야 합니다. 보상 판매 금액은 적용 가능한 새 기기 구입 시 적용하거나 Apple Store Gift Card로 받을 수 있습니다. 최종 확정
-                    금액은 보상 판매 대상 기기를 수령한 후, 예상 금액 산정 시 제시한 기기의 설명과 일치하는지 비교 검수 후 정해집니다. 판매세는 새로 구입한 기기의 총액을 바탕으로 부과될 수
-                    있습니다. 매장에서 보상 판매를 받으려면 사진이 부착된 유효한 신분증이 필요합니다(현지 법률에 따라 해당 정보를 저장해야 할 수 있음). 일부 매장에서는 보상 판매 서비스를
-                    제공하지 않으며, 매장 내 보상 판매와 온라인 보상 판매 간 서비스 내용에 차이가 있을 수 있습니다. 일부 매장은 추가 요구 사항이 있을 수 있습니다. Apple 또는 보상 판매
-                    파트너사는 어떤 보상 판매도 거래를 거부하거나, 보상 판매 수량을 제한할 권리를 보유합니다. 적용 가능 기기의 보상 판매 및 재활용에 대한 자세한 내용은 Apple의 보상 판매
-                    파트너사에서 확인할 수 있습니다. 규제 및 제한이 적용될 수 있습니다.
-                </li>
-            </ol>
+            <div class="reference_wrap">
+                <ol class="reference_list">
+                    <li class="reference_item">
+                        테스트는 2020년 10월 Apple에서 Apple M1 칩 및 8코어 GPU를 탑재한 MacBook Air 시제품을 사용해 진행했으며, 해당 제품은 8GB RAM 및
+                        512GB
+                        SSD로 구성되었습니다. Apple TV 앱 동영상 재생 테스트는 디스플레이의 밝기를 제일 어두운 상태로부터 8단계 밝게 한 상태에서 HD 1080p 콘텐츠를 재생하는
+                        방식으로
+                        배터리 사용 시간을 측정했습니다. 배터리 사용 시간은 사용 패턴 및 설정에 따라 다를 수 있습니다. 자세한 내용은
+                        <a href="#">apple.com/kr/batteries</a>를 참고하십시오.
+                    </li>
+                    <li class="reference_item">
+                        테스트는 2021년 8월과 9월에 Apple에서 JetStream 2, MotionMark 1.2 및 Speedometer 2.0 성능 벤치마크를 사용해 진행했습니다.
+                        Apple
+                        M1 및 배포 전 단계의 macOS Monterey가 설치된 MacBook Pro 13 시스템과 Intel Iris Xe Graphics 및 Windows 10 Pro가
+                        설치된
+                        Intel Core i7 기반 PC 시스템, 배포 전 단계의 iPadOS 15이 설치된 iPad Pro 12.9(5세대)와 Intel Iris Xe Graphics 및
+                        Windows 10 Pro가 설치된 Intel Core i7 기반 PC 시스템 그리고 배포 전 단계의 iOS 15이 설치된 iPhone 12 Pro Max와 Android
+                        11이
+                        설치된 Qualcomm Snapdragon 888 기반 스마트폰에서 배포 전 단계의 Safari 15 및 테스트 당시 기준 최신 안정 버전의 Chrome, Microsoft
+                        Edge, Firefox를 이용하여 테스트했습니다. 기기를 WPA2 Wi‑Fi 네트워크에 연결된 상태에서 테스트했습니다. 성능은 사용 방법, 시스템 설정, 네트워크 연결 및
+                        기타
+                        요인에 따라 달라집니다.
+                    </li>
+                    <li class="reference_item">
+                        1TB = 1조 바이트입니다. 실제 포맷된 용량은 더 적습니다.
+                    </li>
+                    <li class="reference_item">
+                        속도는 이론적 처리량에 근거한 수치이며 실제 결과는 다를 수 있습니다.
+                    </li>
+                    <li class="reference_item">
+                        화면 크기는 대각선 길이입니다.
+                    </li>
+                    <li class="reference_item">
+                        테스트는 2022년 5월 Apple에서 Apple M2, 8코어 CPU, 8코어 GPU, 8GB RAM 및 256GB SSD를 탑재한 MacBook Air 시제품을 사용해
+                        진행했습니다. Apple TV 앱 동영상 재생 테스트는 디스플레이의 밝기를 제일 어두운 상태로부터 8단계 밝게 한 상태에서 HD 1080p 콘텐츠를 재생하는 방식으로 배터리
+                        사용 시간을 측정했습니다. 배터리 사용 시간은 사용 패턴 및 설정에 따라 다를 수 있습니다. 자세한 내용은
+                        자세한 내용은 <a href="#">apple.com/kr/batteries</a>를 참고하십시오.
+                    </li>
+                    <li class="reference_item">
+                        테스트는 2022년 5월 Apple에서 Apple M2, 8코어 CPU, 8코어 GPU, 8GB RAM 및 256GB SSD를 탑재한 MacBook Air 시제품을 사용해
+                        진행했습니다. Apple TV 앱 동영상 재생 테스트는 디스플레이의 밝기를 제일 어두운 상태로부터 8단계 밝게 한 상태에서 HD 1080p 콘텐츠를 재생하는 방식으로 배터리
+                        사용
+                        시간을 측정했습니다. 배터리 사용 시간은 사용 패턴 및 설정에 따라 다를 수 있습니다.
+                        자세한 내용은 <a href="#">apple.com/kr/batteries</a>를 참고하십시오.
+                    </li>
+                    <li class="reference_item">
+                        테스트는 2021년 9월 Apple에서 Apple M1 Pro, 10코어 CPU, 16코어 GPU, 16GB RAM 및 1TB SSD를 탑재한 MacBook Pro 16
+                        시제품을
+                        사용해 진행했습니다. Apple TV 앱 동영상 재생 테스트는 디스플레이의 밝기를 제일 어두운 상태로부터 8단계 밝게 한 상태에서 HD 1080p 콘텐츠를 재생하는 방식으로
+                        배터리
+                        사용 시간을 측정했습니다. 배터리 사용 시간은 사용 패턴 및 설정에 따라 다를 수 있습니다.
+                        자세한 내용은 <a href="#">apple.com/kr/batteries</a>를 참고하십시오.
+                    </li>
+                    <li class="reference_item">
+                        보상 판매 금액은 보상 판매되는 제품의 상태, 연도, 구성에 따라 달라집니다. 일부 기기는 보상 판매 대상이 아닙니다. 크레딧 또는 Apple Store Gift Card로
+                        보상
+                        판매를 받으려면 최소 19세 이상이어야 합니다. 보상 판매 금액은 적용 가능한 새 기기 구입 시 적용하거나 Apple Store Gift Card로 받을 수 있습니다. 최종
+                        확정
+                        금액은 보상 판매 대상 기기를 수령한 후, 예상 금액 산정 시 제시한 기기의 설명과 일치하는지 비교 검수 후 정해집니다. 판매세는 새로 구입한 기기의 총액을 바탕으로 부과될
+                        수
+                        있습니다. 매장에서 보상 판매를 받으려면 사진이 부착된 유효한 신분증이 필요합니다(현지 법률에 따라 해당 정보를 저장해야 할 수 있음). 일부 매장에서는 보상 판매 서비스를
+                        제공하지 않으며, 매장 내 보상 판매와 온라인 보상 판매 간 서비스 내용에 차이가 있을 수 있습니다. 일부 매장은 추가 요구 사항이 있을 수 있습니다. Apple 또는 보상
+                        판매
+                        파트너사는 어떤 보상 판매도 거래를 거부하거나, 보상 판매 수량을 제한할 권리를 보유합니다. 적용 가능 기기의 보상 판매 및 재활용에 대한 자세한 내용은 Apple의 보상
+                        판매
+                        파트너사에서 확인할 수 있습니다. 규제 및 제한이 적용될 수 있습니다.
+                    </li>
+                </ol>
+            </div>
 
-            <div class="breadcrumbs">
-                <ul>
-                    <li><a href="#"><img src="./assets/images/breadcrumbs_logo.svg" alt=""></a></li>
-                    <li><a href="#">Mac</a></li>
-                    <li><a href="#">MacBook Air</a></li>
-                    <li><a href="#">M1 칩 탑재 MacBook Air</a></li>
-                </ul>
+            <div class="breadcrumbs_wrap">
+                <div class="">
+                    <a href="#" class="bread_logo"></a>
+                    <ul class="breadcrumbs">
+                        <li><a href="#">Mac</a></li>
+                        <li><a href="#">MacBook Air</a></li>
+                        <li><a href="#">M1 칩 탑재 MacBook Air</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="foot_nav_wrap">
                 <div class="foot_nav_box">
                     <h3>쇼핑 및 알아보기</h3>
-                    <a href="#">스토어</a>
-                    <a href="#">Mac</a>
-                    <a href="#">iPad</a>
-                    <a href="#">iPhone</a>
-                    <a href="#">Watch</a>
-                    <a href="#">AirPods</a>
-                    <a href="#">Tv 및 홈</a>
-                    <a href="#">AirTag</a>
-                    <a href="#">액세서리</a>
+                    <ul>
+                        <li><a href="#">스토어</a></li>
+                        <li><a href="#">Mac</a></li>
+                        <li><a href="#">iPad</a></li>
+                        <li><a href="#">iPhone</a></li>
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">AirPods</a></li>
+                        <li><a href="#">Tv 및 홈</a></li>
+                        <li><a href="#">AirTag</a></li>
+                        <li><a href="#">액세서리</a></li>
+                    </ul>
                 </div>
 
                 <div class="foot_nav_box">
                     <h3>서비스</h3>
-                    <a href="#">Apple Music</a>
-                    <a href="#">Apple Tv+</a>
-                    <a href="#">Apple Arcade</a>
-                    <a href="#">iCloud</a>
-                    <a href="#">Apple Books</a>
-                    <a href="#">Apple Podcast</a>
-                    <a href="#">Apple store</a>
+                    <ul>
+                        <li><a href="#">Apple Music</a></li>
+                        <li><a href="#">Apple Tv+</a></li>
+                        <li><a href="#">Apple Arcade</a></li>
+                        <li><a href="#">iCloud</a></li>
+                        <li><a href="#">Apple Books</a></li>
+                        <li><a href="#">Apple Podcast</a></li>
+                        <li><a href="#">Apple store</a></li>
+                    </ul>
 
-                    <h3>계정</h3>
-                    <a href="#">Apple ID 관리</a>
-                    <a href="#">Apple Store 계정</a>
-                    <a href="#">iCloud.com</a>
+                    <div class="nav_box_bot">
+                        <h3>계정</h3>
+                        <ul>
+                            <li><a href="#">Apple ID 관리</a></li>
+                            <li><a href="#">Apple Store 계정</a></li>
+                            <li><a href="#">iCloud.com</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="foot_nav_box">
                     <h3>Apple Store</h3>
-                    <a href="#">매장 찾기</a>
-                    <a href="#">Genius Bar</a>
-                    <a href="#">Today at Apple</a>
-                    <a href="#">Apple 캠프</a>
-                    <a href="#">Apple Store 앱</a>
-                    <a href="#">리퍼 및 특가 제품</a>
-                    <a href="#">금융 혜택</a>
-                    <a href="#">Apple Trade in</a>
-                    <a href="#">주문 상태</a>
-                    <a href="#">쇼핑 도움말</a>
+                    <ul>
+                        <li><a href="#">매장 찾기</a></li>
+                        <li><a href="#">Genius Bar</a></li>
+                        <li><a href="#">Today at Apple</a></li>
+                        <li><a href="#">Apple 캠프</a></li>
+                        <li><a href="#">Apple Store 앱</a></li>
+                        <li><a href="#">리퍼 및 특가 제품</a></li>
+                        <li><a href="#">금융 혜택</a></li>
+                        <li><a href="#">Apple Trade in</a></li>
+                        <li><a href="#">주문 상태</a></li>
+                        <li><a href="#">쇼핑 도움말</a></li>
+                    </ul>
                 </div>
 
                 <div class="foot_nav_box">
                     <h3>비즈니스</h3>
-                    <a href="#">Apple과 비즈니스</a>
-                    <a href="#">비즈니스를 위한 제품 쇼핑하기</a>
+                    <ul>
+                        <li><a href="#">Apple과 비즈니스</a></li>
+                        <li><a href="#">비즈니스를 위한 제품 쇼핑하기</a></li>
+                    </ul>
 
-                    <h3>교육</h3>
-                    <a href="#">Apple과 교육</a>
-                    <a href="#">초중고용 제품 쇼핑하기</a>
-                    <a href="#">대학 생활을 위한 제품 쇼핑하기</a>
+                    <div class="nav_box_bot">
+                        <h3>교육</h3>
+                        <ul>
+                            <li><a href="#">Apple과 교육</a></li>
+                            <li><a href="#">초중고용 제품 쇼핑하기</a></li>
+                            <li><a href="#">대학 생활을 위한 제품 쇼핑하기</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="foot_nav_box">
                     <h3>Apple의 가치관</h3>
-                    <a href="#">손쉬운 사용</a>
-                    <a href="#">환경</a>
-                    <a href="#">개인정보 보호</a>
-                    <a href="#">협력업체에 대한 책임</a>
+                    <ul>
+                        <li><a href="#">손쉬운 사용</a></li>
+                        <li><a href="#">환경</a></li>
+                        <li><a href="#">개인정보 보호</a></li>
+                        <li><a href="#">협력업체에 대한 책임</a></li>
+                    </ul>
 
-                    <h3>Apple 정보</h3>
-                    <a href="#">Newsroom</a>
-                    <a href="#">Apple 리더쉽</a>
-                    <a href="#">채용 안내</a>
-                    <a href="#">윤리 및 규정 준수</a>
-                    <a href="#">이벤트</a>
-                    <a href="#">일자리 창출</a>
-                    <a href="#">Apple 연락처</a>
+                    <div class="nav_box_bot">
+                        <h3>Apple 정보</h3>
+                        <ul>
+                            <li><a href="#">Newsroom</a></li>
+                            <li><a href="#">Apple 리더쉽</a></li>
+                            <li><a href="#">채용 안내</a></li>
+                            <li><a href="#">윤리 및 규정 준수</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">일자리 창출</a></li>
+                            <li><a href="#">Apple 연락처</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <div class="find_shop">
-                <p>다양한 쇼핑 방법 : <a href="#">Apple Store를 방문</a> 하거나, <a href="#">리셀러를 찾아보거나, 080-330-8877번으로 전화하세요.</a>
-                </p>
-            </div>
+            <div class="corp_wrap">
+                <div class="find_shop">
+                    <p>다양한 쇼핑 방법 : <a href="#">Apple Store를 방문</a> 하거나, <a href="#">리셀러</a>를 찾아보거나, 080-330-8877번으로
+                        전화하세요.
+                    </p>
+                </div>
 
-            <div class="corp_wrpa">
                 <div class="country">
                     <a href="#">대한민국</a>
                 </div>
+
                 <ul class="list_corp">
+                    <li class="copyright">
+                        Copyright © 2022 Apple Inc. 모든 권리 보유.
+                    </li>
                     <li class="corp_item">
                         <a href="#">개인정보 처리방침</a>
                     </li>
