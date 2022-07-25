@@ -40,7 +40,7 @@ main{
             margin-top: 16px;
             padding-bottom: 12px;
         }
-        .main_msg{
+        .desc{
             max-width: 900px;
             font-size: 32px;
             line-height: 1.25;
@@ -84,7 +84,9 @@ main{
             padding: 0 30px;
         }   
     }
-}
+} // sc_main_pdr 
+
+
 .sc_main_chip{
     padding-top: 170px;
 
@@ -101,7 +103,7 @@ main{
         letter-spacing: -.015em;
         color: #f5f5f7;
     }
-    .main_msg{
+    .desc{
         width: 735px;
         font-size: 28px;
         line-height: 1.25;
@@ -121,7 +123,12 @@ main{
         z-index: -1;
     }
 }
-
+.title{
+    font-size: 21px;
+    line-height: 1.19048;
+    font-weight: 600;
+    letter-spacing: .011em;
+}
 .grid{
     max-width: 1390px;
     margin-left: auto;
@@ -142,11 +149,6 @@ main{
     padding-bottom: 0;
     z-index: 1;
     flex-basis: 0;
-
-    font-size: 21px;
-    line-height: 1.19048;
-    font-weight: 600;
-    letter-spacing: .011em;
 }
 
 .grid_content{
@@ -184,7 +186,7 @@ main{
         font-weight: 700;
         letter-spacing: -.015em;
     }
-    .main_msg{
+    .desc{
         font-size: 19px;
         line-height: 1.4211;
         font-weight: 600;
@@ -205,7 +207,7 @@ main{
         .sub_title{
             max-width: 600px;
         }
-        .main_msg{
+        .desc{
             max-width: 470px;
         }
         .cpu_picture{
@@ -430,10 +432,29 @@ main{
 
     .memory_area{
         grid-column: span 4;
+        .content_wrap{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 11px 0 40px;
+        }
+        .memory_area_bg_picture{
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            left: 0;
+        }
     }
     .storage_area{
         grid-column: span 4;
         background: linear-gradient(to right top, #604C7C 0%, #257983 50%, #20825A 100%);
+        .content_wrap{
+            text-align: center;
+            padding-left: 0;
+            padding-right: 0;
+            width: 100%;
+            margin: 10px 0 60px;
+        }
     }
     .security_area{
         grid-column: span 4;
@@ -608,12 +629,23 @@ main{
         position: absolute;
         z-index: 1;
     }
-    .camera_picture_hdr{
+    .camera_hdr_wrap{
         display: block;
         width: 1146px;
         height: 601px;
         position: relative;
         left: 50%;
         margin-left: -573px;
+    }
+    .facetime_area{
+        grid-column: span 6;
+
+        .facetime_picture{
+            display: block;
+            margin: -14px 40px 19px;
+        }
+    }
+    .mircophone_area{
+        grid-column: span 6;
     }
 }
