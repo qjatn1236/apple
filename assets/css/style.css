@@ -345,7 +345,7 @@ main { overflow: hidden; }
 
 .sc_retina .title_point { color: #a1a1a6; }
 
-.sc_retina .sub_title { font-size: 28px; line-height: 1.14286; font-weight: 500; letter-spacing: .007em; }
+.sc_retina .sub_title { max-width: 75%; font-size: 28px; line-height: 1.14286; font-weight: 500; letter-spacing: .007em; margin-top: 0.8em; color: #a1a1a6; }
 
 .sc_retina .retina_picture_wrap { position: relative; margin: 70px 0; }
 
@@ -391,6 +391,10 @@ main { overflow: hidden; }
 
 .sc_retina .truetone_area .truetone_bg_picture { position: absolute; z-index: 0; top: 0; left: 0; }
 
+.sc_camera .grid_content { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin-left: 40px; }
+
+.sc_camera .desc { max-width: 83.33333%; margin-top: 61px; line-height: 1.21875; font-size: 32px; font-weight: 600; letter-spacing: .004em; }
+
 .sc_camera .camera_picture_wrap { position: relative; margin-top: -65px; -webkit-transform: translateY(87px); transform: translateY(87px); }
 
 .sc_camera .camera_picture_screen { display: block; width: 1075px; height: 322px; left: 50%; margin-left: -537.5px; top: 4.5%; position: absolute; z-index: 1; }
@@ -399,6 +403,10 @@ main { overflow: hidden; }
 
 .sc_camera .facetime_area { grid-column: span 6; }
 
-.sc_camera .facetime_area .facetime_picture { display: block; margin: -14px 40px 19px; }
+.sc_camera .facetime_area .facetime_picture { display: block; margin: 40px 19px 40px -14px; }
 
 .sc_camera .mircophone_area { grid-column: span 6; }
+
+.sc_camera .mircophone_area .desc { z-index: 1; margin-top: 58px; max-width: 83.33333%; font-size: 56px; font-weight: 700; }
+
+.sc_camera .mircophone_area .vod_wrap { padding-right: 40px; }

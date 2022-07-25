@@ -476,10 +476,13 @@ main{
         color: #a1a1a6;
     }
     .sub_title{
+        max-width: 75%;
         font-size: 28px;
         line-height: 1.14286;
         font-weight: 500;
         letter-spacing: .007em;
+        margin-top: 0.8em;
+        color: #a1a1a6;
     }
     .retina_picture_wrap{
         position: relative;
@@ -614,6 +617,18 @@ main{
 } // sc_retina
 
 .sc_camera{
+    .grid_content{
+        flex-direction: column;
+        margin-left: 40px;
+    }
+    .desc{
+        max-width: 83.33333%;
+        margin-top: 61px;
+        line-height: 1.21875;
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: .004em;
+    }
     .camera_picture_wrap{  
         position: relative;
         margin-top: -65px;
@@ -642,10 +657,20 @@ main{
 
         .facetime_picture{
             display: block;
-            margin: -14px 40px 19px;
+            margin: 40px 19px 40px -14px;
         }
     }
     .mircophone_area{
         grid-column: span 6;
+        .desc{
+            z-index: 1;
+            margin-top: 58px;
+            max-width: 83.33333%;
+            font-size: 56px;
+            font-weight: 700;
+        }
+        .vod_wrap{
+            padding-right: 40px;
+        }
     }
 }
