@@ -418,7 +418,7 @@ main { overflow: hidden; }
 
 .sc_keyboard .desc { font-size: 28px; font-weight: 500; letter-spacing: .007em; line-height: 1.25; color: #a1a1b6; max-width: 75%; margin-top: 0.8em; }
 
-.sc_keyboard .keyboard_picture { display: block; width: 1213px; height: 701px; position: relative; left: 50%; margin-left: -606.5px; margin-top: 70px; }
+.sc_keyboard .keyboard_picture_wrap { display: block; width: 1213px; height: 701px; position: relative; left: 50%; margin-left: -606.5px; margin-top: 70px; }
 
 .sc_keyboard .scissor_area { grid-column: span 6; background: linear-gradient(215deg, #c52d47 0%, #a5325c 30%, #8b366d 100%); }
 
@@ -441,3 +441,41 @@ main { overflow: hidden; }
 .sc_keyboard .touchid_area .typo_area { grid-column: span 6; }
 
 .sc_keyboard .touchid_area .touchid_list { grid-column: span 5; }
+
+.sc_connect .title { font-size: 80px; font-weight: 700; color: #a1a1a6; margin-top: 41px; line-height: 1.15; }
+
+.sc_connect .sub_title { font-size: 80px; font-weight: 700; line-height: 1.15; }
+
+.sc_connect .connect_picture_wrap { display: block; width: 3008px; height: 342px; position: relative; left: 50%; margin-left: -1504px; margin-top: 80px; margin-bottom: -160px; }
+
+.sc_connect .sub_typo { max-width: 450px; line-height: 1.5263; font-size: 19px; font-weight: 600; margin-top: 0.77em; }
+
+.sc_connect .wifi_area { grid-column: span 6; background-image: linear-gradient(30deg, #214079 1%, #663A7E 55%, #A82B7D 100%); }
+
+.sc_connect .wifi_area .grid_content { padding: 135px 0 128px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; }
+
+.sc_connect .wifi_area .wifi_picture { display: block; width: 242px; height: 172px; margin: 0 auto 42px; }
+
+.sc_connect .usb_area { grid-column: span 6; background-image: linear-gradient(201deg, #EF278E 0%, #81347F 47%, #43407A 100%); }
+
+.sc_connect .usb_area .grid_content { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; }
+
+.sc_connect .usb_area .usb_list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; width: 100%; padding: 135px 80px 128px; }
+
+.sc_connect .usb_area .usb_item { -ms-flex-preferred-size: 41.66667%; flex-basis: 41.66667%; max-width: 41.66667%; }
+
+.sc_connect .usb_area .usb_item .desc { line-height: 1.2858; font-size: 21px; font-weight: 600; }
+
+.sc_connect .usb_area .usb_item:first-child { margin-bottom: 95px; }
+
+.sc_connect .usb_area .usb_item:nth-child(2) { margin-bottom: 95px; margin-left: 16.66667%; }
+
+.sc_connect .usb_area .usb_item:nth-child(4) { margin-left: 16.66667%; }
+
+.sc_connect .usb_area .charging_picture { display: block; width: 84px; height: 84px; margin: 0 auto 10px; }
+
+.sc_connect .usb_area .display_picture { display: block; width: 104px; height: 82px; margin: 0 auto 12px; }
+
+.sc_connect .usb_area .transfer_picture { display: block; width: 64px; height: 78px; margin: 10px auto 14px; }
+
+.sc_connect .usb_area .connect_picture { display: block; width: 74px; height: 87px; margin: 0 auto 14px; }

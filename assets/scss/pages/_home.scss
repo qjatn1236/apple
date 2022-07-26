@@ -716,7 +716,7 @@ main{
         max-width: 75%;
         margin-top: 0.8em;
     }
-    .keyboard_picture{
+    .keyboard_picture_wrap{
         display: block;
         width: 1213px;
         height: 701px;
@@ -785,3 +785,114 @@ main{
     }
 
 } // sc_keyboard
+
+.sc_connect{
+    .title{
+        font-size: 80px;
+        font-weight: 700;
+        color: #a1a1a6;
+        margin-top: 41px;
+        line-height: 1.15;
+    }
+    .sub_title{
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 1.15;
+    }
+    .connect_picture_wrap{
+        display: block;
+        width: 3008px;
+        height: 342px;
+        position: relative;
+        left: 50%;
+        margin-left: -1504px;
+        margin-top: 80px;
+        margin-bottom: -160px;
+    }
+
+    .sub_typo{
+        max-width: 450px;
+        line-height: 1.5263;
+        font-size: 19px;
+        font-weight: 600;
+        margin-top: 0.77em;
+    }
+
+    .wifi_area{
+        grid-column: span 6;
+        background-image: linear-gradient(30deg, #214079 1%, #663A7E 55%, #A82B7D 100%);
+        .grid_content{
+            padding: 135px 0 128px;
+            justify-content: center;
+            text-align: center;
+        }
+        .wifi_picture{
+            display: block;
+            width: 242px;
+            height: 172px;
+            margin: 0 auto 42px;
+        }
+    }
+
+    .usb_area{
+        grid-column: span 6;
+        background-image: linear-gradient(201deg, #EF278E 0%, #81347F 47%, #43407A 100%);
+        
+        .grid_content{
+            justify-content: center;
+            text-align: center;
+        }
+        .usb_list{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%;
+            padding: 135px 80px 128px;
+        }
+        .usb_item{
+            flex-basis: 41.66667%;
+            max-width: 41.66667%;
+            .desc{
+                line-height: 1.2858;
+                font-size: 21px;
+                font-weight: 600;
+            }
+        }
+        .usb_item:first-child{
+            margin-bottom: 95px;
+        }
+        .usb_item:nth-child(2){
+            margin-bottom: 95px;
+            margin-left: 16.66667%;
+        }
+        .usb_item:nth-child(4){
+            margin-left: 16.66667%;
+        }
+
+        .charging_picture{
+            display: block;
+            width: 84px;
+            height: 84px;
+            margin: 0 auto 10px;
+        }
+        .display_picture{
+            display: block;
+            width: 104px;
+            height: 82px;
+            margin: 0 auto 12px;
+        }
+        .transfer_picture{
+            display: block;
+            width: 64px;
+            height: 78px;
+            margin: 10px auto 14px;
+        }
+        .connect_picture{
+            display: block;
+            width: 74px;
+            height: 87px;
+            margin: 0 auto 14px;
+        }
+    }
+
+} // sc_connect
