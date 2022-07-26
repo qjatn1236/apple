@@ -1159,17 +1159,96 @@ main{
     background: #151516;
     padding: 25px 0;
 
+    h2{
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 1.2858;
+    }
+    .sub_title{
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 1.1875;
+        margin-top: 12px;
+    }
+
     .macos_area{
         grid-column: span 6;
+        min-height: 600px;
+        align-items: center;
+        background: #1d1d1f;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        display: block;
+        .macos_picture{
+            display: block;
+            width: 188px;
+            height: 26px;
+            position: relative;
+            left: 50%;
+            margin-left: -94px;
+            margin-bottom: 11px;
+        }
+
+        .macos_bg_picture{
+            position: absolute;
+            z-index: 0;
+            display: block;
+            width: 1390px;
+            height: 600px;
+            top: 0;
+        }
+        .main_title{
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+
+            .link_more{
+                color: #fff;
+                font-size: 17px;
+                font-weight: 400;
+                display: block;
+                margin-top: 0.8em;
+            }
+        }
     }
     .accessory_area{
-        grid-column: span 6;       
+        grid-column: span 6;
+        min-height: 600px;
+        align-items: center;
+        background: #1d1d1f;
+        min-height: 475px;
+
+        .accessory_picture{
+            display: block;
+            width: 682px;
+            height: 342px;
+            left: 50%;
+            margin-left: -341px;
+            position: absolute;
+            bottom: 0;
+        }
+        .main_title{
+            position: static;
+            padding-top: 43px;
+            padding: 43px 40px 0 40px;
+        }
+
+        p{
+          margin-top: 12px;  
+        }
     }
     .continuity_area{
         grid-column: span 6;
+        background: #1d1d1f;
+
     }
     .elevated_area{
         grid-column: span 6;
+        background: #1d1d1f;
+
     }
     .education_area{
         grid-column: span 6;
