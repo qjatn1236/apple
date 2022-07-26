@@ -308,6 +308,8 @@ main { overflow: hidden; }
 
 .sc_parts .animate_area .bot_typo_area { text-align: center; padding-left: 0; padding-right: 0; margin-right: auto; margin-left: auto; margin-bottom: 74px; max-width: 420px; }
 
+.sc_parts .animate_area .title_point { margin-left: 25px; }
+
 .sc_parts .app_area { grid-column: span 6; background-color: #000; background-image: radial-gradient(at 82% 30%, rgba(20, 20, 57, 0.46) 0px, transparent 50%), radial-gradient(at 100% 66%, #29183e 0px, transparent 50%), radial-gradient(at 35% 0%, #0f1138 0px, transparent 50%), radial-gradient(at 100% 0%, #0f1138 0px, transparent 50%), radial-gradient(at 47% 59%, rgba(35, 20, 57, 0.77) 0px, transparent 50%), radial-gradient(at 1% 2%, #14143d 0px, transparent 50%), radial-gradient(at 74% 0%, rgba(18, 40, 104, 0.9) 0px, transparent 50%), radial-gradient(at 100% 0%, #071541 0px, transparent 50%), radial-gradient(at 0% 64%, rgba(41, 26, 60, 0.8) 0px, transparent 50%), radial-gradient(at 0% 99%, #51395b 0px, transparent 50%), radial-gradient(at 0% 24%, rgba(27, 18, 54, 0.87) 0px, transparent 50%), radial-gradient(at 100% 100%, #654d6f 0px, transparent 50%), radial-gradient(at 72% 100%, #1e1335 0px, transparent 50%), radial-gradient(at 35% 100%, #1e1335 0px, transparent 50%); }
 
 .sc_parts .app_area .typo_area { padding: 0 40px; }
@@ -456,6 +458,10 @@ main { overflow: hidden; }
 
 .sc_connect .wifi_area .wifi_picture { display: block; width: 242px; height: 172px; margin: 0 auto 42px; }
 
+.sc_connect .wifi_area .wifi_headline { font-size: 80px; font-weight: 700; line-height: 1.15; }
+
+.sc_connect .wifi_area .wifi_eyebrow { font-size: 21px; font-weight: 600; line-height: 1.2858; }
+
 .sc_connect .usb_area { grid-column: span 6; background-image: linear-gradient(201deg, #EF278E 0%, #81347F 47%, #43407A 100%); }
 
 .sc_connect .usb_area .grid_content { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; }
@@ -479,3 +485,35 @@ main { overflow: hidden; }
 .sc_connect .usb_area .transfer_picture { display: block; width: 64px; height: 78px; margin: 10px auto 14px; }
 
 .sc_connect .usb_area .connect_picture { display: block; width: 74px; height: 87px; margin: 0 auto 14px; }
+
+.sc_ar { padding-top: 25px; background: #151516; overflow: hidden; margin-top: 145px; }
+
+.sc_ar .group_ar { grid-column: span 12; background: #1d1d1f; min-height: 599px; }
+
+.sc_ar .grid_item { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.sc_ar .content_wrap { padding-bottom: 55px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-preferred-size: 41.66667%; flex-basis: 41.66667%; max-width: 41.66667%; margin-left: 8.3333%; }
+
+.sc_ar .ar_picture { display: block; width: 54px; height: 62px; }
+
+.sc_ar .title { line-height: 1.1875; max-width: 400px; margin-top: 27px; font-size: 48px; font-weight: 600; }
+
+.sc_ar .sub_title { max-width: 270px; font-size: 17px; font-weight: 600; }
+
+.sc_ar .colorpick_area li { display: inline-block; }
+
+.sc_ar .item_wrap { -ms-flex-preferred-size: 41.66667%; flex-basis: 41.66667%; max-width: 41.66667%; }
+
+.sc_ar .item_area { margin-left: 75px; position: relative; margin-top: 48px; display: block; width: 405px; height: 551px; }
+
+.sc_ar .item_area picture { display: block; width: 405px; height: 551px; }
+
+.sc_ar .item_space { position: absolute; top: 0; left: 0; z-index: 1; }
+
+.sc_ar .item_sliver { position: absolute; top: 0; left: 0; z-index: 1; }
+
+.sc_ar .item_gold { position: absolute; top: 0; left: 0; z-index: 1; }
+
+.sc_compare { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; padding-top: 25px; background: #151516; }
+
+.sc_compare .compare_wrap { width: 100%; max-width: 1340px; margin-left: 24px; margin-right: 24px; background: #1d1d1f; padding-left: 24px; padding-right: 24px; border-radius: 30px; }

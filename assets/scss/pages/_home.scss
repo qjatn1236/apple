@@ -389,6 +389,9 @@ main{
             margin-bottom: 74px;
             max-width: 420px;
         }
+        .title_point{
+            margin-left: 25px;
+        }
 
     }
     .app_area{
@@ -832,6 +835,16 @@ main{
             height: 172px;
             margin: 0 auto 42px;
         }
+        .wifi_headline{
+            font-size: 80px;
+            font-weight: 700;
+            line-height: 1.15;
+        }
+        .wifi_eyebrow{
+            font-size: 21px;
+            font-weight: 600;
+            line-height: 1.2858;
+        }
     }
 
     .usb_area{
@@ -896,3 +909,110 @@ main{
     }
 
 } // sc_connect
+
+.sc_ar{
+    padding-top: 25px;
+    background: #151516;
+    overflow: hidden;
+    margin-top: 145px;
+
+    .group_ar{
+        grid-column: span 12;
+        background: #1d1d1f;
+        min-height: 599px;
+    }
+    .grid_item{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .content_wrap{
+        padding-bottom: 55px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 41.66667%;
+        max-width: 41.66667%;
+        margin-left: 8.3333%;
+    }
+    
+    .ar_picture{
+        display: block;
+        width: 54px;
+        height: 62px;
+    }
+
+    .title{
+        line-height: 1.1875;
+        max-width: 400px;
+        margin-top: 27px;
+        font-size: 48px;
+        font-weight: 600;
+    }
+    .sub_title{
+        max-width: 270px;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .colorpick_area li{
+        display: inline-block;
+    }
+
+    .item_wrap{
+        flex-basis: 41.66667%;
+        max-width: 41.66667%; 
+    }
+    .item_area{
+        margin-left: 75px;
+        position: relative;
+        margin-top: 48px;
+        display: block;
+        width: 405px;
+        height: 551px;
+        picture{
+            display: block;
+            width: 405px;
+            height: 551px;
+        }
+    }
+    .item_space{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .item_sliver{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .item_gold{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+} // sc_ar
+
+.sc_compare{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 25px;
+    background: #151516;
+    .compare_wrap{
+        width: 100%;
+        max-width: 1340px;
+        margin-left: 24px;
+        margin-right: 24px;
+        background: #1d1d1f;
+        padding-left: 24px;
+        padding-right: 24px;
+        border-radius: 30px;
+    }
+} // sc_compare
