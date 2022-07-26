@@ -123,12 +123,7 @@ main{
         z-index: -1;
     }
 }
-.title{
-    font-size: 21px;
-    line-height: 1.19048;
-    font-weight: 600;
-    letter-spacing: .011em;
-}
+
 .grid{
     max-width: 1390px;
     margin-left: auto;
@@ -143,7 +138,10 @@ main{
     grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
-.grid_title{
+.area_title{
+    font-size: 21px;
+    line-height: 1.19048;
+    font-weight: 600;
     box-sizing: border-box;
     padding: 40px;
     padding-bottom: 0;
@@ -180,13 +178,13 @@ main{
 .sc_parts{
     margin: -144px auto 0;
 
-    .sub_title{
+    .main_typo{
         font-size: 80px;
         line-height: 1.15;
         font-weight: 700;
         letter-spacing: -.015em;
     }
-    .desc{
+    .sub_typo{
         font-size: 19px;
         line-height: 1.4211;
         font-weight: 600;
@@ -198,17 +196,19 @@ main{
         grid-column: span 12;
         overflow: hidden;
         background: linear-gradient(to right top, #194189 0%, #3B4980 25%, #8738A7 100%);    
-        .text_area{
+        .typo_warp{
             padding-left: 40px;
-            // max-width: 50%;
             margin: 60px 0;
             z-index: 1;
         }
-        .sub_title{
+        .main_typo{
             max-width: 600px;
         }
-        .desc{
+        .sub_typo{
             max-width: 470px;
+        }
+        .title_point{
+            color: #c48cfc;
         }
         .cpu_picture{
             display: block;
@@ -218,18 +218,12 @@ main{
             left: 50%;
             bottom: 28px;
         }
-        .title_point{
-            color: #c48cfc;
-        }
     }
 
     .gpu_area{
         grid-column: span 12;
 
-        .title{
-            z-index: 1;
-        }
-        .text_area{
+        .typo_wrap{
             width: 100%;
             display: flex;
             flex-grow: 1;
@@ -239,11 +233,11 @@ main{
             padding-left: 40px;
             margin: 60px 0;
             z-index: 1;
-            .title_box1{
+            .main_typo1{
                 flex-basis: 50%;
                 max-width: 580px;
             }
-            .title_box2{
+            .main_typo2{
                 flex-basis: 50%;
                 width: 50%;
                 margin-left: 8.33333%;
@@ -267,31 +261,27 @@ main{
     .battery_area{
         grid-column: span 8;
         background: linear-gradient(to bottom, #203025 0%, #151516 100%);
-        .text_area{
-            z-index: 1;
-        }
-        .text_area{
+
+        .typo_area{
             justify-content: flex-start;
             max-width: 630px;
             margin: 0 auto;
             margin-bottom: 65px;
             text-align: center;
+            z-index: 1;
         }
     }
 
     .efficiency_area{
         grid-column: span 4;
         background: linear-gradient(225deg, #1623A6 0%, #3343D4 29%, #175EAC 73%, #176682 100%);
-        .text_area{
-            padding-left: 40px;
+        .typo_area{
+            padding-left: 0;
             // max-width: 50%;
             margin: 60px 0;
             z-index: 1;
         }
-        .text_area{
-            padding-left: 0;
-        }
-        .title_point{
+        .typo_point{
             color: rgba(255,255,255,0.6)
         }
         .link_wrap{
@@ -312,12 +302,12 @@ main{
     .learning_area{
         grid-column: span 12;
         background: linear-gradient(to bottom, #061420 0%, #151516 100%);
-        .text_area{
+        .typo_wrap{
             margin-top: 60px;
             margin-bottom: 60px;
             margin-left: 50%;
         }
-        .main_msg{
+        .main_typo{
             padding: 0 40px;
             font-size: 32px;
             line-height: 1.21875;
@@ -341,26 +331,26 @@ main{
         background-color: #000;
         background-image: radial-gradient(at 100% 0%, rgba(46,110,173,0.99) 0px, transparent 50%),radial-gradient(at 92% 64%, rgba(11,30,80,0.69) 0px, transparent 50%),radial-gradient(at 35% 0%, #0c215a 0px, transparent 50%),radial-gradient(at 0% 0%, #06061d 0px, transparent 50%),radial-gradient(at 76% 0%, #061232 0px, transparent 50%),radial-gradient(at 86% 47%, #0b0f32 0px, transparent 50%),radial-gradient(at 43% 59%, #0b0f32 0px, transparent 50%),radial-gradient(at 6% 100%, #311f47 0px, transparent 50%),radial-gradient(at 42% 100%, #06061d 0px, transparent 50%),radial-gradient(at 1% 53%, #0b0f32 0px, transparent 50%),radial-gradient(at 100% 100%, #0c133b 0px, transparent 50%),radial-gradient(at 63% 100%, #1e1335 0px, transparent 50%),radial-gradient(at 20% 100%, #1e1335 0px, transparent 50%);
         grid-column: span 12;
-        .text_wrap{
+        .typo_wrap{
             display: flex;
             flex-grow: 1;
             justify-content: flex-start;
             align-items: center;
         }
-        .text_area{
+        .typo_area{
             max-width: 50%;
             flex-basis: 50%;
             margin: 60px 0;
             padding-left: 40px;
         }
-        .sub_title{
+        .main_typo{
             max-width: 420px;
             font-size: 56px;
             line-height: 1.07143;
             font-weight: 700;
             letter-spacing: -.028em;
         }
-        .main_msg{
+        .sub_typo{
             max-width: 470px;
         }
         .os_picture{
@@ -378,11 +368,10 @@ main{
         grid-column: span 6;
         background-color: #000;
         background-image: radial-gradient(at 82% 30%, rgba(20,20,57,0.46) 0px, transparent 50%),radial-gradient(at 100% 66%, #29183f 0px, transparent 50%),radial-gradient(at 100% 0%, #161339 0px, transparent 50%),radial-gradient(at 35% 0%, #21163b 0px, transparent 50%),radial-gradient(at 47% 59%, rgba(65,40,77,0.76) 0px, transparent 50%),radial-gradient(at 1% 2%, #3b244c 0px, transparent 50%),radial-gradient(at 75% 1%, #1a1439 0px, transparent 50%),radial-gradient(at 100% 0%, #191439 0px, transparent 50%),radial-gradient(at 0% 99%, #694e6e 0px, transparent 50%),radial-gradient(at 0% 64%, rgba(103,80,109,0.57) 0px, transparent 50%),radial-gradient(at 0% 24%, #694e6e 0px, transparent 50%),radial-gradient(at 100% 100%, #553c5d 0px, transparent 50%),radial-gradient(at 72% 100%, #1e1335 0px, transparent 50%),radial-gradient(at 35% 100%, #1e1335 0px, transparent 50%);
-        .text_area{
+        .typo_area{
             padding: 0 40px;
         }
-        
-        .main_msg{
+        .sub_typo{
             margin-top: 0.77em;
         }
         .grid_bottom{
@@ -391,7 +380,7 @@ main{
             justify-content: flex-start;
             flex-grow: 1;
         }
-        .bot_text_area{
+        .bot_typo_area{
             text-align: center;
             padding-left: 0;
             padding-right: 0;
@@ -406,10 +395,10 @@ main{
         grid-column: span 6;
         background-color: #000;
         background-image: radial-gradient(at 82% 30%, rgba(20,20,57,0.46) 0px, transparent 50%),radial-gradient(at 100% 66%, #29183e 0px, transparent 50%),radial-gradient(at 35% 0%, #0f1138 0px, transparent 50%),radial-gradient(at 100% 0%, #0f1138 0px, transparent 50%),radial-gradient(at 47% 59%, rgba(35,20,57,0.77) 0px, transparent 50%),radial-gradient(at 1% 2%, #14143d 0px, transparent 50%),radial-gradient(at 74% 0%, rgba(18,40,104,0.9) 0px, transparent 50%),radial-gradient(at 100% 0%, #071541 0px, transparent 50%),radial-gradient(at 0% 64%, rgba(41,26,60,0.8) 0px, transparent 50%),radial-gradient(at 0% 99%, #51395b 0px, transparent 50%),radial-gradient(at 0% 24%, rgba(27,18,54,0.87) 0px, transparent 50%),radial-gradient(at 100% 100%, #654d6f 0px, transparent 50%),radial-gradient(at 72% 100%, #1e1335 0px, transparent 50%),radial-gradient(at 35% 100%, #1e1335 0px, transparent 50%);
-        .text_area{
+        .typo_area{
             padding: 0 40px;
         }
-        .main_msg{
+        .sub_typo{
             margin-top: 0.77em;
         }
         .grid_bottom{
@@ -432,11 +421,15 @@ main{
 
     .memory_area{
         grid-column: span 4;
+        .gird_content{
+            z-index: 1;
+        }
         .content_wrap{
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             margin: 11px 0 40px;
+            z-index: 1;
         }
         .memory_area_bg_picture{
             position: absolute;
@@ -510,13 +503,8 @@ main{
     .color_area{
         grid-column: span 12;
         position: relative;
-        .color_picture{
-            position: absolute;
-            z-index: 0;
-            top: 0;
-            left: 0;
-        }
-        .typo_wrap {
+
+        .typo_area {
             position: relative;
             max-width: 580px;
             font-size: 80px;
@@ -545,10 +533,15 @@ main{
                 font-size: 28px;
                 font-weight: 500;
             }
-
+        }
+        .color_picture{
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            left: 0;
         }
         
-    }
+    } // color_area
 
     .pixel_area{
         grid-column: span 6;
@@ -575,7 +568,7 @@ main{
             font-weight: 700;
             text-align: center;
         }
-    }
+    } // pixel_area
 
 
     .truetone_area{
@@ -583,11 +576,11 @@ main{
         .grid_content{
             align-items: initial;
         }
-        .truetone_content_wrap{
+        .typo_area{
             margin: 70px 0 60px;
             padding: 0 40px;
             flex-basis: 100%;
-            p{
+            .typo_area{
                 font-size: 32px;
                 line-height: 1.21875;
                 font-weight: 600;
@@ -617,18 +610,32 @@ main{
 } // sc_retina
 
 .sc_camera{
+    .title{
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 1.15;
+        margin-top: 41px;
+        color: #a1a1a6;
+    }
+    .desc{
+        font-size: 28px;
+        font-weight: 500;
+        color: #a1a1b6;
+        line-height: 1.25;
+        max-width: 75%;
+        margin-top: 0.8em;
+        margin-bottom: 3.75%;
+    }
+    .sub_title{
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 1.15;
+    }
     .grid_content{
         flex-direction: column;
         margin-left: 40px;
     }
-    .desc{
-        max-width: 83.33333%;
-        margin-top: 61px;
-        line-height: 1.21875;
-        font-size: 32px;
-        font-weight: 600;
-        letter-spacing: .004em;
-    }
+
     .camera_picture_wrap{  
         position: relative;
         margin-top: -65px;
@@ -654,7 +661,14 @@ main{
     }
     .facetime_area{
         grid-column: span 6;
-
+        .main_typo{
+            max-width: 83.33333%;
+            margin-top: 61px;
+            line-height: 1.21875;
+            font-size: 32px;
+            font-weight: 600;
+            letter-spacing: .004em;
+        }
         .facetime_picture{
             display: block;
             margin: 40px 19px 40px -14px;
@@ -662,15 +676,112 @@ main{
     }
     .mircophone_area{
         grid-column: span 6;
-        .desc{
+        .main_typo{
             z-index: 1;
             margin-top: 58px;
             max-width: 83.33333%;
             font-size: 56px;
             font-weight: 700;
+            line-height: 1.2;
         }
         .vod_wrap{
             padding-right: 40px;
         }
+
     }
-}
+} // sc_camera
+
+.sc_keyboard{
+    .grid{
+        margin-top: -90px;
+    }
+    .title{
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 1.15;
+        margin-top: 41px; 
+        color: #a1a1b6;
+    }
+    .sub_title{
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 1.15;
+    }
+    .desc{
+        font-size: 28px;
+        font-weight: 500;
+        letter-spacing: .007em;
+        line-height: 1.25;
+        color: #a1a1b6;
+        max-width: 75%;
+        margin-top: 0.8em;
+    }
+    .keyboard_picture{
+        display: block;
+        width: 1213px;
+        height: 701px;
+        position: relative;
+        left: 50%;
+        margin-left: -606.5px;
+        margin-top: 70px;
+    }
+    .scissor_area{
+        grid-column: span 6;
+        background: linear-gradient(215deg, #c52d47 0%, #a5325c 30%, #8b366d 100%);
+        .sub_typo{
+            max-width: 480px;
+            font-size: 19px;
+            font-weight: 600;
+            line-height: 1.52632;
+            margin-top: 0.77em;
+        }
+        .scissor_picture{
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: initial;
+            height: initial;
+        }
+    }
+    .trackpad_area{
+        grid-column: span 6; 
+        .typo_area{
+            max-width: 58.33333%;
+            margin-top: 58px;
+            padding-left: 40px;
+            z-index: 1;
+        }
+        .main_typo{
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        .trackpad_picture{
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            left: 0;
+        }
+
+    }
+    .touchid_area{
+        grid-column: span 12;
+        background: linear-gradient(229deg, #517281 0%, #3b5d70 27%, #4d5c82 72%, #5d647f 100%);
+        .grid{
+            margin-top:62px;
+            padding-left: 40px;
+        }
+        .typo_area{
+            grid-column: span 6;
+        }
+
+        .touchid_list{
+            grid-column: span 5;
+        }
+    }
+
+} // sc_keyboard
