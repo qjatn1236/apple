@@ -130,8 +130,8 @@ main{
     margin-right: auto;
     grid-column-gap: 24px;
     grid-row-gap: 24px;
-    padding-left: 24px;
-    padding-right: 24px;
+    // padding-left: 24px;
+    // padding-right: 24px;
     padding-top: 0;
     padding-bottom: 0;
     display: grid;
@@ -1158,7 +1158,11 @@ main{
     text-align: center;
     background: #151516;
     padding: 25px 0;
-
+    .grid_item{
+        min-height: 600px;
+        align-items: center;
+        background: #1d1d1f;
+    }
     h2{
         font-size: 21px;
         font-weight: 600;
@@ -1175,7 +1179,6 @@ main{
         grid-column: span 6;
         min-height: 600px;
         align-items: center;
-        background: #1d1d1f;
         display: flex;
         align-content: center;
         justify-content: center;
@@ -1218,7 +1221,6 @@ main{
         grid-column: span 6;
         min-height: 600px;
         align-items: center;
-        background: #1d1d1f;
         min-height: 475px;
 
         .accessory_picture{
@@ -1232,7 +1234,6 @@ main{
         }
         .main_title{
             position: static;
-            padding-top: 43px;
             padding: 43px 40px 0 40px;
         }
 
@@ -1242,7 +1243,6 @@ main{
     }
     .continuity_area{
         grid-column: span 6;
-        background: #1d1d1f;
         .continuity_picture{
             display: block;
             width: 682px;
@@ -1253,11 +1253,14 @@ main{
             position: absolute;
             bottom: 0;
         }
+        .main_title{
+            position: static;
+            padding: 43px 40px 0 40px;
+        }
 
     }
     .elevated_area{
         grid-column: span 6;
-        background: #1d1d1f;
         .elevated_picture{
             display: block;
             width: 465px;
@@ -1266,6 +1269,10 @@ main{
             margin-left: -232.5px;
             position: absolute;
             bottom: 0;
+        }
+        .main_title{
+            position: static;
+            padding: 43px 40px 0 40px;
         }
     }
     .education_area{
@@ -1280,6 +1287,26 @@ main{
             top: 0;
             z-index: 0;
         }
+        .main_title{
+            width: 86%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+        .desc{
+            font-size: 17px;
+            font-weight: 400;
+            margin-top: 0.8em;
+            color: #fff;
+        }
+        .link_more{
+            display: block;
+            font-size: 17px;
+            margin-top: 0.8em;
+            color: #fff;
+        }
     }
     .business_area{
         grid-column: span 6;
@@ -1292,6 +1319,29 @@ main{
             margin-left: -341px;
             top: 0;
             z-index: 0;
+        }
+        .main_title{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+        .desc{
+            margin-top: 0.8em;
+            font-size: 17px;
+        }
+        .link_shop{
+            display: block;
+            margin-top: 0.8em;
+            color: #fff;
+            font-size: 17px;
+        }
+        .link_more{
+            display: block;
+            margin-top: 0.8em;
+            color: #fff;
+            font-size: 17px;
         }
     }
 
