@@ -1,6 +1,13 @@
 main{
     overflow: hidden;
 }
+.rfc_num{
+    position: relative;
+    display: inline-block;
+    font-size: .6em;
+    vertical-align: baseline;
+    top: -0.5em;
+}
 .sc_main_pdr{
     .vod_wrap{
         width: 1400px;
@@ -433,6 +440,12 @@ main{
             align-items: flex-start;
             margin: 11px 0 40px;
             z-index: 1;
+        }
+        .app_picture{
+            display: block;
+            width: 65px;
+            height: 67px;
+            margin: 0 0 19px 40px;
         }
         .memory_area_bg_picture{
             position: absolute;
