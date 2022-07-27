@@ -1255,6 +1255,20 @@ main{
         line-height: 1.1875;
         margin-top: 12px;
     }
+    .desc{
+        font-size: 17px;
+        font-weight: 400;
+        margin-top: 0.8em;
+        color: #fff;
+    }
+
+    .link_more{
+        color: #2997ff;
+        font-size: 17px;
+        font-weight: 400;
+        display: block;
+        margin-top: 0.8em;
+    }
 
     .macos_area{
         grid-column: span 6;
@@ -1273,7 +1287,6 @@ main{
             margin-left: -94px;
             margin-bottom: 11px;
         }
-
         .macos_bg_picture{
             position: absolute;
             z-index: 0;
@@ -1316,11 +1329,26 @@ main{
         .main_title{
             position: static;
             padding: 43px 40px 0 40px;
+            margin-bottom: 36px;
+        }
+        .link_shop{
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            white-space: nowrap;
+            font-size: 17px;
+            line-height: 1.17648;
+            font-weight: 400;
+            letter-spacing: -.022em;
+            font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            min-width: 28px;
+            padding: 8px 16px 8px 16px;
+            margin-top: 8px;
+            border-radius: 18px;
+            background: #0071e3;
+            color: #fff;
         }
 
-        p{
-          margin-top: 12px;  
-        }
     }
     .continuity_area{
         grid-column: span 6;
@@ -1336,11 +1364,13 @@ main{
         .main_title{
             position: static;
             padding: 43px 40px 0 40px;
+            padding-bottom: 396px;
         }
 
     }
     .elevated_area{
         grid-column: span 6;
+        min-height: 570px;
         .elevated_picture{
             display: block;
             width: 465px;
@@ -1353,10 +1383,17 @@ main{
         .main_title{
             position: static;
             padding: 43px 40px 0 40px;
+            padding-bottom: 305px;
+
+            p:nth-child(3){
+                width: 86%;
+                margin: 0 auto;
+                font-size: 17px;
+                font-weight: 400;
+                margin-top: 0.8em;
+            }
         }
-        .link_more{
-            
-        }
+
     }
     .education_area{
         grid-column: span 6;
@@ -1378,12 +1415,7 @@ main{
             transform: translate(-50%, -50%);
             z-index: 1;
         }
-        .desc{
-            font-size: 17px;
-            font-weight: 400;
-            margin-top: 0.8em;
-            color: #fff;
-        }
+
         .link_more{
             display: block;
             font-size: 17px;
@@ -1411,10 +1443,7 @@ main{
             z-index: 1;
             color: #fff;
         }
-        .desc{
-            margin-top: 0.8em;
-            font-size: 17px;
-        }
+
         .link_shop{
             display: block;
             margin-top: 0.8em;
