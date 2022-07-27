@@ -401,6 +401,7 @@ main{
         }
 
     }
+
     .app_area{
         grid-column: span 6;
         background-color: #000;
@@ -431,7 +432,13 @@ main{
 
     .memory_area{
         grid-column: span 4;
-        .gird_content{
+        position: relative;
+        .memory_inner{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             z-index: 1;
         }
         .content_wrap{
@@ -439,8 +446,17 @@ main{
             flex-direction: column;
             align-items: flex-start;
             margin: 11px 0 40px;
-            z-index: 1;
         }
+
+        .sub_typo{
+            padding: 0 40px;
+            font-size: 28px;
+            line-height: 1.25;
+            font-weight: 600;
+            letter-spacing: .007em;
+            margin-top: 0;
+        }
+
         .app_picture{
             display: block;
             width: 65px;
@@ -567,6 +583,7 @@ main{
         }
         .pixel_content_wrap{
             flex-basis:100%;
+            padding: 0 40px;
         }
         .pixel_picture{
             display: block;
@@ -594,9 +611,9 @@ main{
         }
         .typo_area{
             margin: 70px 0 60px;
-            padding: 0 40px;
+            padding-left:40px;
             flex-basis: 100%;
-            .typo_area{
+            p{
                 font-size: 32px;
                 line-height: 1.21875;
                 font-weight: 600;
@@ -788,15 +805,66 @@ main{
         grid-column: span 12;
         background: linear-gradient(229deg, #517281 0%, #3b5d70 27%, #4d5c82 72%, #5d647f 100%);
         .grid{
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%;
             margin-top:62px;
             padding-left: 40px;
+            flex-grow: 1;
         }
         .typo_area{
             grid-column: span 6;
+            p{
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 1.21875;
+                max-width: 545px;
+                padding-bottom: 30px;
+                padding-right: 30px;
+            }
         }
-
         .touchid_list{
             grid-column: span 5;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            max-width: 520px;
+            li{
+                display: flex;
+                flex-direction: column;
+                max-width: 41.66667%;
+                flex-basis: 41.66667%;
+                margin-bottom: 90px;
+            }
+            .desc{
+                max-width: 200px;
+                margin-top: 9px;
+                font-size: 21px;
+                line-height: 1.381;
+                font-weight: 500;
+                color: #fff;
+            }
+        }
+        .unlock_picture{
+            display: block;
+            width: 82px;
+            height: 82px;
+        }
+        .appstore_picture{
+            width: 87px;
+            height: 75px;
+        }
+        .protected_picture{
+            display: block;
+            width: 70px;
+            height: 82px;
+        }
+        .appletv_picture{
+            display: block;
+            width: 82px;
+            height: 82px;
         }
     }
 
@@ -1260,7 +1328,6 @@ main{
             display: block;
             width: 682px;
             height: 343px;
-            position: relative;
             left: 50%;
             margin-left: -341px;
             position: absolute;
@@ -1286,6 +1353,9 @@ main{
         .main_title{
             position: static;
             padding: 43px 40px 0 40px;
+        }
+        .link_more{
+            
         }
     }
     .education_area{
@@ -1339,6 +1409,7 @@ main{
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 1;
+            color: #fff;
         }
         .desc{
             margin-top: 0.8em;

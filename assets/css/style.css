@@ -329,11 +329,13 @@ main { overflow: hidden; }
 
 .sc_parts .app_area .app_picture { display: block; width: 481px; height: 388px; position: relative; left: 50%; margin-left: -240.5px; -webkit-transform: translate(-1px, 12px); transform: translate(-1px, 12px); margin-bottom: 74px; }
 
-.sc_parts .memory_area { grid-column: span 4; }
+.sc_parts .memory_area { grid-column: span 4; position: relative; }
 
-.sc_parts .memory_area .gird_content { z-index: 1; }
+.sc_parts .memory_area .memory_inner { width: 100%; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 1; }
 
-.sc_parts .memory_area .content_wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; margin: 11px 0 40px; z-index: 1; }
+.sc_parts .memory_area .content_wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; margin: 11px 0 40px; }
+
+.sc_parts .memory_area .sub_typo { padding: 0 40px; font-size: 28px; line-height: 1.25; font-weight: 600; letter-spacing: .007em; margin-top: 0; }
 
 .sc_parts .memory_area .app_picture { display: block; width: 65px; height: 67px; margin: 0 0 19px 40px; }
 
@@ -377,7 +379,7 @@ main { overflow: hidden; }
 
 .sc_retina .pixel_area .grid_content { margin-bottom: 74px; }
 
-.sc_retina .pixel_area .pixel_content_wrap { -ms-flex-preferred-size: 100%; flex-basis: 100%; }
+.sc_retina .pixel_area .pixel_content_wrap { -ms-flex-preferred-size: 100%; flex-basis: 100%; padding: 0 40px; }
 
 .sc_retina .pixel_area .pixel_picture { display: block; width: 360px; height: 164px; position: relative; left: 50%; margin-left: -180px; margin-top: 19px; margin-bottom: 8px; }
 
@@ -387,9 +389,9 @@ main { overflow: hidden; }
 
 .sc_retina .truetone_area .grid_content { -webkit-box-align: initial; -ms-flex-align: initial; align-items: initial; }
 
-.sc_retina .truetone_area .typo_area { margin: 70px 0 60px; padding: 0 40px; -ms-flex-preferred-size: 100%; flex-basis: 100%; }
+.sc_retina .truetone_area .typo_area { margin: 70px 0 60px; padding-left: 40px; -ms-flex-preferred-size: 100%; flex-basis: 100%; }
 
-.sc_retina .truetone_area .typo_area .typo_area { font-size: 32px; line-height: 1.21875; font-weight: 600; }
+.sc_retina .truetone_area .typo_area p { font-size: 32px; line-height: 1.21875; font-weight: 600; }
 
 .sc_retina .truetone_area .typo_area span { color: #a1a1a6; }
 
@@ -449,11 +451,25 @@ main { overflow: hidden; }
 
 .sc_keyboard .touchid_area { grid-column: span 12; background: linear-gradient(229deg, #517281 0%, #3b5d70 27%, #4d5c82 72%, #5d647f 100%); }
 
-.sc_keyboard .touchid_area .grid { margin-top: 62px; padding-left: 40px; }
+.sc_keyboard .touchid_area .grid { -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; width: 100%; margin-top: 62px; padding-left: 40px; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
 
 .sc_keyboard .touchid_area .typo_area { grid-column: span 6; }
 
-.sc_keyboard .touchid_area .touchid_list { grid-column: span 5; }
+.sc_keyboard .touchid_area .typo_area p { font-size: 32px; font-weight: 600; line-height: 1.21875; max-width: 545px; padding-bottom: 30px; padding-right: 30px; }
+
+.sc_keyboard .touchid_area .touchid_list { grid-column: span 5; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; width: 100%; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; max-width: 520px; }
+
+.sc_keyboard .touchid_area .touchid_list li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; max-width: 41.66667%; -ms-flex-preferred-size: 41.66667%; flex-basis: 41.66667%; margin-bottom: 90px; }
+
+.sc_keyboard .touchid_area .touchid_list .desc { max-width: 200px; margin-top: 9px; font-size: 21px; line-height: 1.381; font-weight: 500; color: #fff; }
+
+.sc_keyboard .touchid_area .unlock_picture { display: block; width: 82px; height: 82px; }
+
+.sc_keyboard .touchid_area .appstore_picture { width: 87px; height: 75px; }
+
+.sc_keyboard .touchid_area .protected_picture { display: block; width: 70px; height: 82px; }
+
+.sc_keyboard .touchid_area .appletv_picture { display: block; width: 82px; height: 82px; }
 
 .sc_connect .title { font-size: 80px; font-weight: 700; color: #a1a1a6; margin-top: 41px; line-height: 1.15; }
 
@@ -605,7 +621,7 @@ main { overflow: hidden; }
 
 .sc_service .continuity_area { grid-column: span 6; }
 
-.sc_service .continuity_area .continuity_picture { display: block; width: 682px; height: 343px; position: relative; left: 50%; margin-left: -341px; position: absolute; bottom: 0; }
+.sc_service .continuity_area .continuity_picture { display: block; width: 682px; height: 343px; left: 50%; margin-left: -341px; position: absolute; bottom: 0; }
 
 .sc_service .continuity_area .main_title { position: static; padding: 43px 40px 0 40px; }
 
@@ -629,7 +645,7 @@ main { overflow: hidden; }
 
 .sc_service .business_area .business_picture { display: block; width: 682px; height: 600px; position: absolute; left: 50%; margin-left: -341px; top: 0; z-index: 0; }
 
-.sc_service .business_area .main_title { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 1; }
+.sc_service .business_area .main_title { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 1; color: #fff; }
 
 .sc_service .business_area .desc { margin-top: 0.8em; font-size: 17px; }
 

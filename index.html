@@ -269,7 +269,7 @@
                     <h3>통합메모리</h3>
                 </div>
 
-                <div class="grid_content">
+                <div class="memory_inner">
                     <div class="content_wrap">
                         <picture class="app_picture">
                             <source srcset="./assets/images/macos_apps_large.png" media="min-width:1068px">
@@ -308,9 +308,9 @@
                 <div class="grid_center">
                     <div class="content_wrap">
                         <div class="storage_text_box">
-                            <span>최대</span>
-                            <span>2TB</span>
-                            <span>SSD 저장 장치<a href="#">3</a></span>
+                            <span class="caption">최대</span>
+                            <span class="value">2<span class="sub_value">TB</span></span>
+                            <span class="caption">SSD 저장 장치<a href="#">3</a></span>
                         </div>
                         <div class="text_area">
                             <p class="desc">
@@ -424,7 +424,7 @@
                     </div>
                     <div class="grid_content">
                         <div class="typo_area">
-                            <p class="typo_area">눈이 즐겁고. 눈이 편하고. <span>MacBook Aii는 주변 환경에 맞춰 디스플레이의 색온도를 자동으로
+                            <p class="">눈이 즐겁고. 눈이 편하고. <span>MacBook Aii는 주변 환경에 맞춰 디스플레이의 색온도를 자동으로
                                     조절해줍니다. 덕분에 훨씬 자연스러운 화면을 경험할 수 있죠. </span>
                             </p>
                             <picture class="truetone_picture">
@@ -584,52 +584,54 @@
                     <div class="area_title">
                         <h3>Touch ID</h3>
                     </div>
+
                     <div class="grid">
                         <div class="typo_area">
-                            <p class="main_typo">MacBook Air를 잠금 해제하는 일, 터치 한 번이면 됩니다. 영화를 대여하거나 앱을 구입할 때, 암호가 걸린 문서를 열
+                            <p class="main_typo">MacBook Air를 잠금 해제하는 일, 터치 한 번이면 됩니다. 영화를 대여하거나 앱을 구입할 때, 암호가 걸린
+                                문서를 열
                                 때, 시스템 설정에 접근할 때도
                                 매번 암호를 다시 입력할 필요 없이 지문으로 간단히 사용자 인증을 할 수 있죠.</p>
                         </div>
                         <ul class="touchid_list">
                             <li class="touchid_item">
-                                <picture>
+                                <picture class="unlock_picture">
                                     <source srcset="./assets/images/touchid_icon_unlock_large_2x.png"
                                         media="min-width:734px">
                                     <source srcset="./assets/images/touchid_icon_unlock_medium_2x.png"
                                         media="min-width:1023px">
                                     <img src="./assets/images/touchid_icon_unlock_large_2x.png" alt="">
                                 </picture>
-                                <p>Mac 잠금 해제</p>
+                                <p class="desc">Mac 잠금 해제</p>
                             </li>
                             <li class="touchid_item">
-                                <picture>
+                                <picture class="appstore_picture">
                                     <source srcset="./assets/images/touchid_icon_appstore_large.png"
                                         media="min-width:734px">
                                     <source srcset="./assets/images/touchid_icon_appstore_small.png"
                                         media="min-width:1023px">
                                     <img src="./assets/images/touchid_icon_appstore_large.png" alt="">
                                 </picture>
-                                <p>App Store <br> 콘텐츠 구매</p>
+                                <p class="desc">App Store <br> 콘텐츠 구매</p>
                             </li>
                             <li class="touchid_item">
-                                <picture>
+                                <picture class="protected_picture">
                                     <source srcset="./assets/images/touchid_icon_protected_large.png"
                                         media="min-width:734px">
                                     <source srcset="./assets/images/touchid_icon_protected_small.png"
                                         media="min-width:1023px">
                                     <img src="./assets/images/touchid_icon_protected_large.png" alt="">
                                 </picture>
-                                <p>암호로 보호된 <br> 문서 열기</p>
+                                <p class="desc">암호로 보호된 <br> 문서 열기</p>
                             </li>
                             <li class="touchid_item">
-                                <picture>
+                                <picture class="appletv_picture">
                                     <source srcset="./assets/images/touchid_icon_appletv_large_2x.png"
                                         media="min-width:734px">
                                     <source srcset="./assets/images/touchid_icon_appletv_small_2x.png"
                                         media="min-width:1023px">
                                     <img src="./assets/images/touchid_icon_appletv_large_2x.png" alt="">
                                 </picture>
-                                <p>Apple TV 앱에서 <br> 콘텐츠 구매</p>
+                                <p class="desc">Apple TV 앱에서 <br> 콘텐츠 구매</p>
                             </li>
                         </ul>
                     </div>
@@ -971,8 +973,11 @@
                 <div class="elevated_area grid_item">
                     <div class="main_title">
                         <h2>Apple Trade In</h2>
-                        <p class="sub_title">새&nbsp;MacBook&nbsp;Air 구매&nbsp;시 사용할&nbsp;수&nbsp;있는 크레딧을 받는&nbsp;법.<a
-                                href="#">9</a></p>
+                        <p class="sub_title">새&nbsp;MacBook&nbsp;Air 구매&nbsp;시 사용할&nbsp;수&nbsp;있는 크레딧을 받는&nbsp;법.
+                            <a href="#">9</a>
+                        </p>
+                        <p>보상 판매 대상 컴퓨터를 새 Mac 구매 시 사용할 수 있는 크레딧으로 교환해드립니다. 기기의 가치를 최대한 활용하는 것, 당신은 물론 지구에게도
+                            좋은&nbsp;일이죠.</p>
                         <a href="#" class="link_more">더 알아보기</a>
                     </div>
                     <picture class="elevated_picture">
