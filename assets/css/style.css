@@ -597,8 +597,16 @@ main { overflow: hidden; }
 
 .sc_service .continuity_area { grid-column: span 6; background: #1d1d1f; }
 
+.sc_service .continuity_area .continuity_picture { display: block; width: 682px; height: 343px; position: relative; left: 50%; margin-left: -341px; position: absolute; bottom: 0; }
+
 .sc_service .elevated_area { grid-column: span 6; background: #1d1d1f; }
+
+.sc_service .elevated_area .elevated_picture { display: block; width: 465px; height: 252px; left: 50%; margin-left: -232.5px; position: absolute; bottom: 0; }
 
 .sc_service .education_area { grid-column: span 6; }
 
+.sc_service .education_area .education_picture { display: block; width: 682px; height: 600px; position: absolute; left: 50%; margin-left: -341px; top: 0; z-index: 0; }
+
 .sc_service .business_area { grid-column: span 6; }
+
+.sc_service .business_area .business_picture { display: block; width: 682px; height: 600px; position: absolute; left: 50%; margin-left: -341px; top: 0; z-index: 0; }

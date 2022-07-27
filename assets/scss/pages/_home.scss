@@ -1243,18 +1243,56 @@ main{
     .continuity_area{
         grid-column: span 6;
         background: #1d1d1f;
+        .continuity_picture{
+            display: block;
+            width: 682px;
+            height: 343px;
+            position: relative;
+            left: 50%;
+            margin-left: -341px;
+            position: absolute;
+            bottom: 0;
+        }
 
     }
     .elevated_area{
         grid-column: span 6;
         background: #1d1d1f;
-
+        .elevated_picture{
+            display: block;
+            width: 465px;
+            height: 252px;
+            left: 50%;
+            margin-left: -232.5px;
+            position: absolute;
+            bottom: 0;
+        }
     }
     .education_area{
         grid-column: span 6;
+        .education_picture{
+            display: block;
+            width: 682px;
+            height: 600px;
+            position: absolute;
+            left: 50%;
+            margin-left: -341px;
+            top: 0;
+            z-index: 0;
+        }
     }
     .business_area{
         grid-column: span 6;
+        .business_picture{
+            display: block;
+            width: 682px;
+            height: 600px;
+            position: absolute;
+            left: 50%;
+            margin-left: -341px;
+            top: 0;
+            z-index: 0;
+        }
     }
 
 } // sc_service
