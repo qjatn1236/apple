@@ -29,10 +29,16 @@ body{
 .link_more{
   color: #2997ff;
   cursor: pointer;
+  &:hover{
+    text-decoration: underline;
+  }
 }
 .link_inquiry{
   color: #2997ff;
   cursor: pointer;
+  &:hover{
+    text-decoration: underline;
+  }
 }
 .link_buy{
   font-size: 12px;
@@ -52,4 +58,7 @@ body{
 .link_copy{
   color: #2997ff;
   display: block;
+  &:hover{
+    text-decoration: underline;
+  }
 }

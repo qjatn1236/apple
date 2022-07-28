@@ -89,7 +89,10 @@ main{
             content: "|";
             display: inline-block;
             padding: 0 30px;
-        }   
+        }
+        &:last-child:hover{
+            text-decoration: underline;
+        }
     }
 } // sc_main_pdr 
 
@@ -605,7 +608,7 @@ main{
         position: absolute;
         z-index: 1;
     }
-    .hdr_box{
+    .retina_picture_hdr{
         display: block;
         width: 1197px;
         height: 704px;
@@ -766,7 +769,7 @@ main{
         position: absolute;
         z-index: 1;
     }
-    .camera_hdr_wrap{
+    .camera_picture_hdr{
         display: block;
         width: 1146px;
         height: 601px;
@@ -831,7 +834,7 @@ main{
         max-width: 75%;
         margin-top: 0.8em;
     }
-    .keyboard_picture_wrap{
+    .keyboard_picture{
         display: block;
         width: 1213px;
         height: 701px;
@@ -965,7 +968,7 @@ main{
         font-weight: 700;
         line-height: 1.15;
     }
-    .connect_picture_wrap{
+    .connect_picture{
         display: block;
         width: 3008px;
         height: 342px;

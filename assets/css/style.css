@@ -14,7 +14,7 @@
 
 html, body { height: 100%; }
 
-img, picture, video, canvas, svg { display: block; max-width: 100%; }
+img, picture, video, canvas, svg { display: block; }
 
 button { background: none; border: 0; cursor: pointer; }
 
@@ -23,6 +23,8 @@ a { text-decoration: none; }
 table { border-collapse: collapse; border-spacing: 0; }
 
 ul, ol { list-style: none; }
+
+img { width: 100%; height: 100%; }
 
 /* @세팅구역 */
 body { font-size: 14px; scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; -ms-overflow-style: none; -ms-overflow-style: none; scrollbar-width: none; }
@@ -87,11 +89,17 @@ body { background: #000; color: #f5f5f7; font-family: 'SF-Pro'; }
 
 .link_more { color: #2997ff; cursor: pointer; }
 
+.link_more:hover { text-decoration: underline; }
+
 .link_inquiry { color: #2997ff; cursor: pointer; }
+
+.link_inquiry:hover { text-decoration: underline; }
 
 .link_buy { font-size: 12px; line-height: 1.33337; font-weight: 400; letter-spacing: -.01em; min-width: 23px; padding-left: 11px; padding-right: 11px; padding-top: 4px; padding-bottom: 4px; border-radius: 12px; background: #0071e3; color: #fff; display: inline-block; }
 
 .link_copy { color: #2997ff; display: block; }
+
+.link_copy:hover { text-decoration: underline; }
 
 header .nav_list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-line-pack: center; align-content: center; max-width: 980px; margin: 0 auto; }
 
@@ -116,6 +124,10 @@ header .group_pdr .sub_title { font-size: 12px; font-weight: 400; opacity: 0.55;
 header .group_pdr .pdr_menu { padding-top: 34px; font-size: 12px; }
 
 header .group_pdr .pdr_menu a { margin-left: 24px; }
+
+header .group_pdr .pdr_menu a:hover { color: #2997ff; }
+
+header .group_pdr .pdr_menu a .link_buy:hover { opacity: .7; }
 
 header .group_pdr .summary { opacity: 0.55; }
 
@@ -218,6 +230,8 @@ main { overflow: hidden; }
 .sc_main_pdr .main_pdr_item { font-size: 28px; line-height: 1.14286; letter-spacing: .007em; }
 
 .sc_main_pdr .main_pdr_item:first-child::after { content: "|"; display: inline-block; padding: 0 30px; }
+
+.sc_main_pdr .main_pdr_item:last-child:hover { text-decoration: underline; }
 
 .sc_main_chip { padding-top: 170px; }
 
@@ -377,7 +391,7 @@ main { overflow: hidden; }
 
 .sc_retina .retina_picture_screen { display: block; width: 927px; height: 579px; left: 50%; margin-left: -463.5px; top: 43px; position: absolute; z-index: 1; }
 
-.sc_retina .hdr_box { display: block; width: 1197px; height: 704px; position: relative; left: 50%; margin-left: -598.5px; }
+.sc_retina .retina_picture_hdr { display: block; width: 1197px; height: 704px; position: relative; left: 50%; margin-left: -598.5px; }
 
 .sc_retina .color_area { grid-column: span 12; position: relative; }
 
@@ -429,7 +443,7 @@ main { overflow: hidden; }
 
 .sc_camera .camera_picture_screen { display: block; width: 1075px; height: 322px; left: 50%; margin-left: -537.5px; top: 4.5%; position: absolute; z-index: 1; }
 
-.sc_camera .camera_hdr_wrap { display: block; width: 1146px; height: 601px; position: relative; left: 50%; margin-left: -573px; }
+.sc_camera .camera_picture_hdr { display: block; width: 1146px; height: 601px; position: relative; left: 50%; margin-left: -573px; }
 
 .sc_camera .facetime_area { grid-column: span 6; }
 
@@ -451,7 +465,7 @@ main { overflow: hidden; }
 
 .sc_keyboard .desc { font-size: 28px; font-weight: 500; letter-spacing: .007em; line-height: 1.25; color: #a1a1b6; max-width: 75%; margin-top: 0.8em; }
 
-.sc_keyboard .keyboard_picture_wrap { display: block; width: 1213px; height: 701px; position: relative; left: 50%; margin-left: -606.5px; margin-top: 70px; }
+.sc_keyboard .keyboard_picture { display: block; width: 1213px; height: 701px; position: relative; left: 50%; margin-left: -606.5px; margin-top: 70px; }
 
 .sc_keyboard .scissor_area { grid-column: span 6; background: linear-gradient(215deg, #c52d47 0%, #a5325c 30%, #8b366d 100%); }
 
@@ -493,7 +507,7 @@ main { overflow: hidden; }
 
 .sc_connect .sub_title { font-size: 80px; font-weight: 700; line-height: 1.15; }
 
-.sc_connect .connect_picture_wrap { display: block; width: 3008px; height: 342px; position: relative; left: 50%; margin-left: -1504px; margin-top: 80px; margin-bottom: -160px; }
+.sc_connect .connect_picture { display: block; width: 3008px; height: 342px; position: relative; left: 50%; margin-left: -1504px; margin-top: 80px; margin-bottom: -160px; }
 
 .sc_connect .sub_typo { max-width: 450px; line-height: 1.5263; font-size: 19px; font-weight: 600; margin-top: 0.77em; }
 

@@ -76,6 +76,12 @@ header{
             font-size: 12px;
             a{
                 margin-left: 24px;
+                &:hover{
+                    color: #2997ff;
+                }
+                .link_buy:hover{
+                    opacity: .7;
+                }
             }
         }
         .summary{
