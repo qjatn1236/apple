@@ -19,7 +19,14 @@ body{
 .content{
   width: 980px;
   margin: 0 auto;
+  @include tablet{
+    margin-left: auto;
+    margin-right: auto;
+    width: 692px;  
+  }
 }
+
+
 
 :lang(ko){
   word-break: keep-all;
@@ -62,3 +69,30 @@ body{
     text-decoration: underline;
   }
 }
+
+.headline-large{font-size:80px;}
+.headline-medium{font-size:56;}
+.desc-large{font-size:32px;}
+.desc-medium{font-size:28px;}
+.desc-small{font-size:19px;}
+
+.title-large{font-size:21px;}
+
+@include desktop{
+  .headline-large{font-size:64px;}
+  .headline-medium{font-size:40px;}
+  .desc-large{font-size:28px;}
+  .desc-medium{font-size:28px;}
+}
+
+@include mobile{
+  .headline-large{font-size:48px;}
+  .headline-medium{font-size:40px;}
+  .desc-large{font-size:24px;}
+  .title-large{font-size:19px;}
+
+}
+
+
+
+

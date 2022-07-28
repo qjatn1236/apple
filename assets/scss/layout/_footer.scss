@@ -75,6 +75,9 @@
         a{
             color: #d2d2d7;
         }
+        a:hover{
+            text-decoration: underline;
+        }
     } 
 
     .breadcrumbs_wrap{
@@ -85,6 +88,9 @@
     }
     .breadcrumbs{
         padding-left: 25px;
+        a:hover{
+            text-decoration: underline;
+        }
     }
     .breadcrumbs::after{
         content: '';
@@ -154,6 +160,12 @@
     }
     .foot_nav_box li{
         margin-bottom: 0.8em;
+        a{
+            color: #d2d2d7;
+        }
+        a:hover{
+            text-decoration: underline;
+          }
     }
     .foot_nav_box li:last-child{
         margin-bottom: 0;
@@ -172,6 +184,9 @@
         a{
             color: #2997ff;
         }
+        a:hover{
+            text-decoration: underline;
+        }
     }
     .country{
         float: right;
@@ -180,6 +195,9 @@
         top: -3px;
         z-index: 2;
         white-space: nowrap;
+        a:hover{
+            text-decoration: underline;
+        } 
     }
     .list_corp{
         position: relative;
@@ -196,10 +214,10 @@
         padding-right: 10px;
         margin-top: 5px;
         white-space: nowrap;
-
-    }
-    .list_corp li{
         border-right: 1px solid #424245;
+        a:hover{
+            text-decoration: underline;
+        } 
     }
 
     .list_corp .copyright{
