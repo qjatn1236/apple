@@ -7,7 +7,7 @@
 *,
 :after,
 :before {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 :root {
   -webkit-tap-highlight-color: transparent;

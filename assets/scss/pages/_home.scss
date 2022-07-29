@@ -10,7 +10,6 @@ main{
 }
 .sc_main_pdr{
     .vod_wrap{
-        width: 1400px;
         height: 732px;
     }
     video{
@@ -74,7 +73,7 @@ main{
         color: #a1a1a6;
         letter-spacing: .007em;
     }
-    .main_pdr_list{
+    .main_pdr_box{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -95,7 +94,6 @@ main{
         }
     }
 } // sc_main_pdr 
-
 
 .sc_main_chip{
     padding-top: 170px;
@@ -137,21 +135,6 @@ main{
     }
 }
 
-.grid{
-    max-width: 1390px;
-    margin-left: auto;
-    margin-right: auto;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 0;
-    padding-bottom: 0;
-    display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    box-sizing: content-box;
-}
-
 .area_title{
     font-size: 21px;
     line-height: 1.19048;
@@ -161,29 +144,6 @@ main{
     padding-bottom: 0;
     z-index: 1;
     flex-basis: 0;
-}
-
-.grid_content{
-    flex-grow: 1;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.grid_item{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    z-index: 0;
-    box-sizing: border-box;
-    overflow: hidden;
-    background-color: #151516;
-    border-radius:30px;
-    min-height: 700px;
-}
-.grid_center{
-    align-items: center;
 }
 
 .sc_parts{
