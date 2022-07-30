@@ -11,6 +11,9 @@ main{
 .sc_main_pdr{
     .vod_wrap{
         height: 732px;
+        @include tablet{
+            height: 524px;
+        }
     }
     video{
         top: 68px;
@@ -20,17 +23,32 @@ main{
         position: relative;
         left: 680px;
         margin-left: -700px;
+        @include tablet{
+            top: 44px;
+            left: 468px;
+            margin-left: -500px;
+            display: block;
+            width: 1000px;
+            height: 300px; 
+        }
     }
 
     .main_title{
         margin-top: -200px;
+        @include tablet{
+            margin-top: -114px;    
+        }
         text-align: center;
         .title{
             font-size: 32px;
-            line-height: 1.125;
+            line-height: 1.21875;
             font-weight: 600;
             letter-spacing: .004em;
             color: #f5f5f7;
+            @include tablet{
+                line-height: 1.25;
+                font-size: 28px;
+            }
         }
         .sub_title{
             background: radial-gradient(#eff1ff, #000);
@@ -41,10 +59,15 @@ main{
             -webkit-text-fill-color: transparent;
             font-size: 96px;
             font-weight: 700;
-            line-height: 1.04167;
-            letter-spacing: -.015em;
+            line-height: 1.14615;
+            letter-spacing: 0em;
             margin-top: 16px;
             padding-bottom: 12px;
+            @include tablet{
+                line-height: 1.15;
+                margin-top: 8px;
+                font-size: 80px;
+            }
         }
         .desc{
             max-width: 900px;
@@ -54,6 +77,11 @@ main{
             letter-spacing: .004em;
             color: #a1a1a6;
             margin: 10px auto 0;
+            @include tablet{
+                line-height: 1.39286;
+                margin: 2px auto 0;
+                font-size: 28px;
+            }
         }
     }
     .main_pdr_chip{
@@ -61,6 +89,9 @@ main{
         justify-content: center;
         align-items: center;
         margin: 42px 0 0 -20px;
+        @include tablet{
+            margin:27px 0 0 -20px;
+        }
     }
     .pdr_chip_picture{
         width: 96px;
@@ -72,6 +103,12 @@ main{
         font-weight: 500;
         color: #a1a1a6;
         letter-spacing: .007em;
+        @include tablet{
+            line-height: 1.2917;
+            font-size: 24px;
+            margin-top: 11px;
+            margin-bottom: 0.4em;
+        }
     }
     .main_pdr_box{
         display: flex;

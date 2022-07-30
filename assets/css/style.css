@@ -283,21 +283,37 @@ main { overflow: hidden; }
 
 .sc_main_pdr .vod_wrap { height: 732px; }
 
+@media (max-width: 1068px) { .sc_main_pdr .vod_wrap { height: 524px; } }
+
 .sc_main_pdr video { top: 68px; display: block; max-width: 1400px; height: 420px; position: relative; left: 680px; margin-left: -700px; }
+
+@media (max-width: 1068px) { .sc_main_pdr video { top: 44px; left: 468px; margin-left: -500px; display: block; width: 1000px; height: 300px; } }
 
 .sc_main_pdr .main_title { margin-top: -200px; text-align: center; }
 
-.sc_main_pdr .main_title .title { font-size: 32px; line-height: 1.125; font-weight: 600; letter-spacing: .004em; color: #f5f5f7; }
+@media (max-width: 1068px) { .sc_main_pdr .main_title { margin-top: -114px; } }
 
-.sc_main_pdr .main_title .sub_title { background: radial-gradient(#eff1ff, #000); background-size: 100% 200%; background-position: 50% 100%; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 96px; font-weight: 700; line-height: 1.04167; letter-spacing: -.015em; margin-top: 16px; padding-bottom: 12px; }
+.sc_main_pdr .main_title .title { font-size: 32px; line-height: 1.21875; font-weight: 600; letter-spacing: .004em; color: #f5f5f7; }
+
+@media (max-width: 1068px) { .sc_main_pdr .main_title .title { line-height: 1.25; font-size: 28px; } }
+
+.sc_main_pdr .main_title .sub_title { background: radial-gradient(#eff1ff, #000); background-size: 100% 200%; background-position: 50% 100%; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 96px; font-weight: 700; line-height: 1.14615; letter-spacing: 0em; margin-top: 16px; padding-bottom: 12px; }
+
+@media (max-width: 1068px) { .sc_main_pdr .main_title .sub_title { line-height: 1.15; margin-top: 8px; font-size: 80px; } }
 
 .sc_main_pdr .main_title .desc { max-width: 900px; font-size: 32px; line-height: 1.25; font-weight: 500; letter-spacing: .004em; color: #a1a1a6; margin: 10px auto 0; }
 
+@media (max-width: 1068px) { .sc_main_pdr .main_title .desc { line-height: 1.39286; margin: 2px auto 0; font-size: 28px; } }
+
 .sc_main_pdr .main_pdr_chip { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 42px 0 0 -20px; }
+
+@media (max-width: 1068px) { .sc_main_pdr .main_pdr_chip { margin: 27px 0 0 -20px; } }
 
 .sc_main_pdr .pdr_chip_picture { width: 96px; height: 96px; }
 
 .sc_main_pdr .pdr_chip_text { font-size: 28px; line-height: 1.14286; font-weight: 500; color: #a1a1a6; letter-spacing: .007em; }
+
+@media (max-width: 1068px) { .sc_main_pdr .pdr_chip_text { line-height: 1.2917; font-size: 24px; margin-top: 11px; margin-bottom: 0.4em; } }
 
 .sc_main_pdr .main_pdr_box { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; max-width: 100%; margin-top: 32px; }
 
