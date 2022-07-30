@@ -120,9 +120,9 @@ body { background: #000; color: #f5f5f7; }
 
 .desc-medium { font-size: 28px; font-weight: 600; line-height: 1.25; }
 
-.desc-small { font-size: 19px; font-weight: 600; line-height: 1.5263; }
+.desc-small { font-size: 19px; font-weight: 600; line-height: 1.52632; letter-spacing: .012em; }
 
-.title-large { font-size: 21px; font-weight: 600; line-height: 1.2858; }
+.title-large { font-size: 21px; font-weight: 600; line-height: 1.2858; margin-bottom: 0.4em; z-index: 1; padding: 40px; padding-bottom: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 @media (max-width: 1069px) { .headline-large { font-size: 64px; }
   .headline-medium { font-size: 40px; }
@@ -134,7 +134,7 @@ body { background: #000; color: #f5f5f7; }
   .desc-large { font-size: 24px; }
   .title-large { font-size: 19px; } }
 
-.grid { max-width: 1390px; margin-left: auto; margin-right: auto; grid-column-gap: 24px; grid-row-gap: 24px; padding-left: 24px; padding-right: 24px; padding-top: 0; padding-bottom: 0; display: -ms-grid; display: grid; -ms-grid-columns: (minmax(0, 1fr))[12]; grid-template-columns: repeat(12, minmax(0, 1fr)); -webkit-box-sizing: content-box; box-sizing: content-box; }
+.grid { max-width: 1390px; margin-left: auto; margin-right: auto; grid-column-gap: 24px; grid-row-gap: 24px; padding-left: 24px; padding-right: 24px; padding-top: 0; padding-bottom: 0; display: -ms-grid; display: grid; -ms-grid-columns: (minmax(0, 1fr))[12]; grid-template-columns: repeat(12, minmax(0, 1fr)); }
 
 .grid_center { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
@@ -272,7 +272,7 @@ main { overflow: hidden; }
 
 .sc_main_pdr .vod_wrap { height: 732px; }
 
-.sc_main_pdr video { top: 68px; display: block; width: 1400px; height: 420px; position: relative; left: 680px; margin-left: -700px; }
+.sc_main_pdr video { top: 68px; display: block; max-width: 1400px; height: 420px; position: relative; left: 680px; margin-left: -700px; }
 
 .sc_main_pdr .main_title { margin-top: -200px; text-align: center; }
 
@@ -308,21 +308,15 @@ main { overflow: hidden; }
 
 .sc_main_chip video { display: block; width: 1754px; height: 1056px; position: relative; left: 50%; margin-left: -877px; margin-top: -158px; z-index: -1; }
 
-.area_title { font-size: 21px; line-height: 1.19048; font-weight: 600; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 40px; padding-bottom: 0; z-index: 1; -ms-flex-preferred-size: 0; flex-basis: 0; }
-
 .sc_parts { margin: -144px auto 0; }
-
-.sc_parts .main_typo { line-height: 1.15; font-weight: 700; letter-spacing: -.015em; }
-
-.sc_parts .sub_typo { font-size: 19px; line-height: 1.4211; font-weight: 600; letter-spacing: .012em; margin-top: 26px; }
 
 .sc_parts .cpu_area { grid-column: span 12; overflow: hidden; background: -webkit-gradient(linear, left bottom, right top, from(#194189), color-stop(25%, #3B4980), to(#8738A7)); background: linear-gradient(to right top, #194189 0%, #3B4980 25%, #8738A7 100%); }
 
 .sc_parts .cpu_area .typo_warp { padding-left: 40px; margin: 60px 0; z-index: 1; }
 
-.sc_parts .cpu_area .main_typo { max-width: 600px; }
+.sc_parts .cpu_area .headline-large { max-width: 600px; display: block; }
 
-.sc_parts .cpu_area .sub_typo { max-width: 470px; }
+.sc_parts .cpu_area .desc-small { margin-top: 26px; max-width: 470px; }
 
 .sc_parts .cpu_area .title_point { color: #c48cfc; }
 
@@ -330,11 +324,11 @@ main { overflow: hidden; }
 
 .sc_parts .gpu_area { grid-column: span 12; }
 
-.sc_parts .gpu_area .typo_wrap { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-box-align: center; -ms-flex-align: center; align-items: center; max-width: unset; padding-right: 40px; padding-left: 40px; margin: 60px 0; z-index: 1; }
+.sc_parts .gpu_area .typo_wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-right: 40px; padding-left: 40px; margin: 60px 0; z-index: 1; }
 
-.sc_parts .gpu_area .typo_wrap .main_typo1 { -ms-flex-preferred-size: 50%; flex-basis: 50%; max-width: 580px; }
+.sc_parts .gpu_area .headline-large { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; max-width: 580px; }
 
-.sc_parts .gpu_area .typo_wrap .main_typo2 { -ms-flex-preferred-size: 50%; flex-basis: 50%; width: 50%; margin-left: 8.33333%; -ms-flex-preferred-size: 41.66667%; flex-basis: 41.66667%; max-width: 41.66667%; }
+.sc_parts .gpu_area .desc-small { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; margin-left: 8.33333%; -ms-flex-preferred-size: 41.66667%; flex-basis: 41.66667%; max-width: 41.66667%; }
 
 .sc_parts .gpu_area .title_point { color: #4693ad; }
 
@@ -431,8 +425,6 @@ main { overflow: hidden; }
 .sc_parts .security_area .privacy_btn { cursor: pointer; display: inline-block; text-align: center; font-size: 17px; line-height: 1.17648; min-width: 28px; color: #fff; background-color: transparent; border-width: 2px; border-style: solid; border-radius: 100px; padding: 9px 17px; font-weight: 600; white-space: normal; }
 
 .sc_parts .security_area .text_area { text-align: center; color: #a1a1a6; margin-top: 0.5em; line-height: 1.1875; font-size: 48px; font-weight: 700; }
-
-.sc_parts .grid_content { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 .sc_parts .security_ani { background-repeat: no-repeat; background-image: url(./../images/security_large_2x.png); background-size: 800px 1152px; width: 100px; height: 128px; -webkit-animation: unlock_animation-large 6s steps(1) forwards; animation: unlock_animation-large 6s steps(1) forwards; -webkit-animation-play-state: paused; animation-play-state: paused; -webkit-animation-iteration-count: initial; animation-iteration-count: initial; -webkit-animation-duration: 72s; animation-duration: 72s; background-position: 0px 0px; -webkit-animation-delay: -67s; animation-delay: -67s; margin-left: auto; margin-right: auto; }
 

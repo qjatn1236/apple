@@ -96,13 +96,20 @@ body{
 .desc-small{
   font-size:19px;
   font-weight: 600;
-  line-height: 1.5263;
+  line-height: 1.52632;
+  letter-spacing: .012em;
 }
 
 .title-large{
   font-size:21px;
   font-weight: 600;
   line-height: 1.2858;
+  margin-bottom: 0.4em;
+  z-index: 1;
+  padding: 40px;
+  padding-bottom: 0;
+  box-sizing: border-box;
+
 }
 
 @include desktop{
@@ -120,7 +127,6 @@ body{
 
 }
 
-
 // 그리드
 .grid{
   max-width: 1390px;
@@ -134,7 +140,6 @@ body{
   padding-bottom: 0;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  box-sizing: content-box;
 }
 
 .grid_center{

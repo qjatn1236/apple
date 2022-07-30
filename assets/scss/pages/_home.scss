@@ -15,7 +15,7 @@ main{
     video{
         top: 68px;
         display: block;
-        width: 1400px;
+        max-width: 1400px;
         height: 420px;
         position: relative;
         left: 680px;
@@ -135,33 +135,9 @@ main{
     }
 }
 
-.area_title{
-    font-size: 21px;
-    line-height: 1.19048;
-    font-weight: 600;
-    box-sizing: border-box;
-    padding: 40px;
-    padding-bottom: 0;
-    z-index: 1;
-    flex-basis: 0;
-}
-
 .sc_parts{
     margin: -144px auto 0;
 
-    .main_typo{
-        line-height: 1.15;
-        font-weight: 700;
-        letter-spacing: -.015em;
-    }
-    .sub_typo{
-        font-size: 19px;
-        line-height: 1.4211;
-        font-weight: 600;
-        letter-spacing: .012em;        
-        margin-top: 26px;
-    }
-    
     .cpu_area{
         grid-column: span 12;
         overflow: hidden;
@@ -171,10 +147,12 @@ main{
             margin: 60px 0;
             z-index: 1;
         }
-        .main_typo{
+        .headline-large{
             max-width: 600px;
+            display: block;
         }
-        .sub_typo{
+        .desc-small{
+            margin-top: 26px;
             max-width: 470px;
         }
         .title_point{
@@ -192,28 +170,24 @@ main{
 
     .gpu_area{
         grid-column: span 12;
-
         .typo_wrap{
-            width: 100%;
             display: flex;
             flex-grow: 1;
             align-items: center;
-            max-width: unset;
             padding-right: 40px;
             padding-left: 40px;
             margin: 60px 0;
             z-index: 1;
-            .main_typo1{
-                flex-basis: 50%;
-                max-width: 580px;
-            }
-            .main_typo2{
-                flex-basis: 50%;
-                width: 50%;
-                margin-left: 8.33333%;
-                flex-basis: 41.66667%;
-                max-width: 41.66667%;
-            }
+        }
+        .headline-large{
+            flex: 1;
+            max-width: 580px;
+        }
+        .desc-small{
+            flex: 1;
+            margin-left: 8.33333%;
+            flex-basis: 41.66667%;
+            max-width: 41.66667%;
         }
         .title_point{
             color: #4693ad;
@@ -515,9 +489,6 @@ main{
             font-weight: 700;
         }
     
-    }
-    .grid_content{
-        justify-content: center;
     }
 
     .security_ani{
