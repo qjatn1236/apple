@@ -12,8 +12,8 @@ body{
   font-family: 'SF Pro KR';
 }
 
-.sc_title{
-  color: #a1a1a6;
+.section{
+  padding-top: 170px;
 }
 
 .content{
@@ -69,6 +69,15 @@ body{
 }
 
 // 폰트
+.sc_title{
+  font-size:80px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0em;
+  margin-top: 41px;
+  color: #a1a1a6;
+}
+
 .headline-large{
   font-size:80px;
   font-weight: 700;
