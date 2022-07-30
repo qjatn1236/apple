@@ -149,7 +149,6 @@ main{
         }
         .headline-large{
             max-width: 600px;
-            display: block;
         }
         .desc-small{
             margin-top: 26px;
@@ -211,7 +210,7 @@ main{
 
         .typo_area{
             justify-content: flex-start;
-            max-width: 630px;
+            max-width: 620px;
             margin: 0 auto;
             margin-bottom: 65px;
             text-align: center;
@@ -225,7 +224,6 @@ main{
         .typo_area{
             padding-left: 40px;
             padding-right: 40px;
-            flex-basis: 100%;
             max-width: 100%;
             margin: 60px 0;
             z-index: 1;
@@ -256,12 +254,8 @@ main{
             margin-bottom: 60px;
             margin-left: 50%;
         }
-        .main_typo{
+        .desc-large{
             padding: 0 40px;
-            font-size: 32px;
-            line-height: 1.21875;
-            font-weight: 600;
-            letter-spacing: .004em;
         }
         .title_point{
             color: #a1a1a6;
@@ -292,15 +286,12 @@ main{
             margin: 60px 0;
             padding-left: 40px;
         }
-        .main_typo{
+        .headline-medium{
             max-width: 420px;
-            font-size: 56px;
-            line-height: 1.07143;
-            font-weight: 700;
-            letter-spacing: -.028em;
         }
-        .sub_typo{
+        .desc-small{
             max-width: 470px;
+            margin-top: 26px;
         }
         .os_picture{
             display: block;
@@ -317,11 +308,9 @@ main{
         grid-column: span 6;
         background-color: #000;
         background-image: radial-gradient(at 82% 30%, rgba(20,20,57,0.46) 0px, transparent 50%),radial-gradient(at 100% 66%, #29183f 0px, transparent 50%),radial-gradient(at 100% 0%, #161339 0px, transparent 50%),radial-gradient(at 35% 0%, #21163b 0px, transparent 50%),radial-gradient(at 47% 59%, rgba(65,40,77,0.76) 0px, transparent 50%),radial-gradient(at 1% 2%, #3b244c 0px, transparent 50%),radial-gradient(at 75% 1%, #1a1439 0px, transparent 50%),radial-gradient(at 100% 0%, #191439 0px, transparent 50%),radial-gradient(at 0% 99%, #694e6e 0px, transparent 50%),radial-gradient(at 0% 64%, rgba(103,80,109,0.57) 0px, transparent 50%),radial-gradient(at 0% 24%, #694e6e 0px, transparent 50%),radial-gradient(at 100% 100%, #553c5d 0px, transparent 50%),radial-gradient(at 72% 100%, #1e1335 0px, transparent 50%),radial-gradient(at 35% 100%, #1e1335 0px, transparent 50%);
-        .typo_area{
-            padding: 0 40px;
-        }
-        .sub_typo{
+        .desc-small{
             margin-top: 0.77em;
+            padding: 0px 40px;
         }
         .grid_bottom{
             display: flex;
@@ -341,18 +330,16 @@ main{
         .title_point{
             margin-left: 25px;
         }
-
     }
 
     .app_area{
         grid-column: span 6;
         background-color: #000;
         background-image: radial-gradient(at 82% 30%, rgba(20,20,57,0.46) 0px, transparent 50%),radial-gradient(at 100% 66%, #29183e 0px, transparent 50%),radial-gradient(at 35% 0%, #0f1138 0px, transparent 50%),radial-gradient(at 100% 0%, #0f1138 0px, transparent 50%),radial-gradient(at 47% 59%, rgba(35,20,57,0.77) 0px, transparent 50%),radial-gradient(at 1% 2%, #14143d 0px, transparent 50%),radial-gradient(at 74% 0%, rgba(18,40,104,0.9) 0px, transparent 50%),radial-gradient(at 100% 0%, #071541 0px, transparent 50%),radial-gradient(at 0% 64%, rgba(41,26,60,0.8) 0px, transparent 50%),radial-gradient(at 0% 99%, #51395b 0px, transparent 50%),radial-gradient(at 0% 24%, rgba(27,18,54,0.87) 0px, transparent 50%),radial-gradient(at 100% 100%, #654d6f 0px, transparent 50%),radial-gradient(at 72% 100%, #1e1335 0px, transparent 50%),radial-gradient(at 35% 100%, #1e1335 0px, transparent 50%);
-        .typo_area{
-            padding: 0 40px;
-        }
-        .sub_typo{
+
+        .desc-small{
             margin-top: 0.77em;
+            padding: 0 40px;
         }
         .grid_bottom{
             display: flex;
@@ -386,25 +373,19 @@ main{
         .content_wrap{
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
             margin: 11px 0 40px;
         }
-        .sub_typo{
+        .desc-medium{
             padding: 0 40px;
-            font-size: 28px;
-            line-height: 1.25;
-            font-weight: 600;
-            letter-spacing: .007em;
             margin-top: 0;
         }
-
-        .app_picture{
+        .memory_picture{
             display: block;
             width: 65px;
             height: 67px;
             margin: 0 0 19px 40px;
         }
-        .memory_area_bg_picture{
+        .memory_bg_picture{
             width: 100%;
             height: 100%;
             position: absolute;
@@ -413,17 +394,15 @@ main{
             left: 0;
         }
     }
+
     .storage_area{
         grid-column: span 4;
         background: linear-gradient(to right top, #604C7C 0%, #257983 50%, #20825A 100%);
         .content_wrap{
             text-align: center;
-            padding-left: 0;
-            padding-right: 0;
             width: 100%;
             margin: 10px 0 60px;
         }
-
         .value{
             font-size: 96px;
             line-height: 1.0625;
@@ -436,7 +415,6 @@ main{
             line-height: 1.0625;
             font-weight: 700;
         }
-
         .caption{
             width: 100%;
             position: relative;
@@ -447,88 +425,66 @@ main{
             font-size: 24px;
             font-weight: 500;
         }
-        .text_area{
-            padding-left: 85px;
-            padding-right: 85px;
-            line-height: 1.52632;
-            font-size: 19px;
-            font-weight: 600;
+        .desc-small{
+            padding: 0 85px;
             margin-top: 32px;
         }
     }
 
     .security_area{
         grid-column: span 4;
+        .content_warp{
+            width: 100%;
+        }
         .privacy_btn_wrap{
             padding: 0 40px 40px 40px;
             margin: 0 auto;
         }
 
         .privacy_btn{
-            cursor: pointer;
             display: inline-block;
             text-align: center;
             font-size: 17px;
             line-height: 1.17648;
             min-width: 28px;
             color: #fff;
-            background-color: transparent;
             border-width: 2px;
             border-style: solid;
-            border-radius: 100px;
+            border-radius: 50px;
             padding: 9px 17px;
             font-weight: 600;
             white-space: normal;
         }
-        .text_area{
+        .headline-small{
             text-align: center;
             color: #a1a1a6;
             margin-top: 0.5em;
-            line-height: 1.1875;
-            font-size: 48px;
-            font-weight: 700;
         }
-    
+
+        .security_bg{
+            background-repeat: no-repeat;
+            background-image: url(./../images/security_large_2x.png);
+            background-size: 800px 1152px;
+            width: 100px;
+            height: 128px;
+            margin: 0 auto;
+        }
     }
 
-    .security_ani{
-        background-repeat: no-repeat;
-        background-image: url(./../images/security_large_2x.png);
-        background-size: 800px 1152px;
-        width: 100px;
-        height: 128px;
-        animation: unlock_animation-large 6s steps(1) forwards;
-        animation-play-state: paused;
-        animation-iteration-count: initial;
-        animation-duration: 72s;
-        background-position: 0px 0px;
-        animation-delay: -67s;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
  
 .sc_retina{
     padding-top: 170px;
-    .title{
-        font-size: 80px;
-        line-height: 1.125;
-        font-weight: 700;
-        letter-spacing: .004em;
-        color: #f5f5f7;
-        margin-top:41px;
-    }
-    .title_point{
-        color: #a1a1a6;
-    }
-    .sub_title{
-        max-width: 75%;
-        font-size: 28px;
-        line-height: 1.14286;
-        font-weight: 500;
-        letter-spacing: .007em;
-        margin-top: 0.8em;
-        color: #a1a1a6;
+
+    .main_title{
+        .sc_title{
+            margin-top:41px;
+        }
+        .desc-medium{
+            max-width: 75%;
+            margin-top: 0.8em;
+            color: #a1a1a6;
+        }
     }
     .retina_picture_wrap{
         position: relative;
@@ -557,12 +513,9 @@ main{
         grid-column: span 12;
         position: relative;
 
-        .typo_area {
+        .headline-large {
             position: relative;
             max-width: 580px;
-            font-size: 80px;
-            font-weight: 700;
-            line-height: 1.15;
             padding-left: 40px;
             z-index: 1;
         }
@@ -581,10 +534,8 @@ main{
             .sub_value{
                 font-size: 96px;
             }
-            .desc{
+            .desc-medium{
                 display: block;
-                font-size: 28px;
-                font-weight: 500;
             }
         }
         .color_picture{
@@ -618,10 +569,7 @@ main{
             margin-top: 19px;
             margin-bottom: 8px;
         }
-        .desc{
-            font-size: 80px;
-            line-height: 1.05;
-            font-weight: 700;
+        .headline-large{
             text-align: center;
         }
     } // pixel_area
@@ -630,22 +578,17 @@ main{
     .truetone_area{
         grid-column: span 6;
         .grid_content{
-            align-items: initial;
+            flex-basis: 91.66667%;
+            max-width: 91.66667%;
         }
-        .typo_area{
+        .desc-large{
             margin: 70px 0 60px;
             padding-left:40px;
             flex-basis: 100%;
-            p{
-                font-size: 32px;
-                line-height: 1.21875;
-                font-weight: 600;
-            }
-            span{
+            title_point{
                 color: #a1a1a6;
             }
         }
-
         .truetone_picture{
             display: block;
             width: 292px;
@@ -669,17 +612,15 @@ main{
 
 .sc_camera{
     .title{
-        font-size: 80px;
+        font-size:80px;
         font-weight: 700;
         line-height: 1.15;
+        letter-spacing: 0em;
         margin-top: 41px;
         color: #a1a1a6;
     }
-    .desc{
-        font-size: 28px;
-        font-weight: 500;
+    .desc-medium{
         color: #a1a1b6;
-        line-height: 1.25;
         max-width: 75%;
         margin-top: 0.8em;
         margin-bottom: 3.75%;
@@ -691,7 +632,7 @@ main{
     }
     .grid_content{
         flex-direction: column;
-        margin-left: 40px;
+        padding-left: 40px;
     }
 
     .camera_picture_wrap{  
@@ -719,13 +660,9 @@ main{
     }
     .facetime_area{
         grid-column: span 6;
-        .main_typo{
+        .desc-large{
             max-width: 83.33333%;
             margin-top: 61px;
-            line-height: 1.21875;
-            font-size: 32px;
-            font-weight: 600;
-            letter-spacing: .004em;
         }
         .facetime_picture{
             display: block;
@@ -734,18 +671,22 @@ main{
     }
     .mircophone_area{
         grid-column: span 6;
-        .main_typo{
+        .headline-medium{
             z-index: 1;
             margin-top: 58px;
             max-width: 83.33333%;
-            font-size: 56px;
-            font-weight: 700;
-            line-height: 1.2;
         }
-        .vod_wrap{
+        .grid_content{
             padding-right: 40px;
         }
-
+        .vod_wrap{
+            width: 100%;
+            height: 100%;
+        }
+        video{
+            width: 100%;
+            height: 100%;
+        }
     }
 } // sc_camera
 
@@ -760,6 +701,7 @@ main{
         margin-top: 41px; 
         color: #a1a1b6;
     }
+    headline-large
     .sub_title{
         font-size: 80px;
         font-weight: 700;

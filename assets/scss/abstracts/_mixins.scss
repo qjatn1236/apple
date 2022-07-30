@@ -27,7 +27,6 @@
 /*반응형 화면 크기*/
 $mobile: 734px;
 $tablet: 1068px;
-$desktop: 1069px;
 
 
 /*반응형, 브라우저 크기가 734px 이하일때*/
@@ -43,12 +42,3 @@ $desktop: 1069px;
     @content;
   }
 }
-
-/*반응형, 브라우저 크기가 1069px 이상일때*/
-@mixin desktop{
-  @media (max-width: $desktop){
-    @content;
-  }
-}
-
-

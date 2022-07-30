@@ -9,10 +9,11 @@
 body{
   background: #000;
   color: #f5f5f7;
+  font-family: 'SF Pro KR';
 }
 
-.section{
-  padding-top: 170px;
+.sc_title{
+  color: #a1a1a6;
 }
 
 .content{
@@ -76,21 +77,29 @@ body{
 }
 
 .headline-medium{
-  font-size:56;
+  font-size:56px;
   font-weight: 700;
-  line-height: 1.12;
+  line-height: 1.2;
+}
+
+.headline-small{
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1875;
 }
 
 .desc-large{
   font-size:32px;
   font-weight: 600;
-  line-height: 1.2188;
+  line-height: 1.21875;
+  letter-spacing: .004em;
 }
 
 .desc-medium{
   font-size:28px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.25;
+  letter-spacing: .007em;
 }
 
 .desc-small{
@@ -109,10 +118,9 @@ body{
   padding: 40px;
   padding-bottom: 0;
   box-sizing: border-box;
-
 }
 
-@include desktop{
+@include tablet{
   .headline-large{font-size:64px;}
   .headline-medium{font-size:40px;}
   .desc-large{font-size:28px;}
@@ -124,7 +132,6 @@ body{
   .headline-medium{font-size:40px;}
   .desc-large{font-size:24px;}
   .title-large{font-size:19px;}
-
 }
 
 // 그리드
