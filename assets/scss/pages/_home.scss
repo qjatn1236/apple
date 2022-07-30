@@ -608,6 +608,7 @@ main{
             top: 0;
             left: 0;
         }
+
     }
 } // sc_retina
 
@@ -626,16 +627,10 @@ main{
         margin-top: 0.8em;
         margin-bottom: 3.75%;
     }
-    .sub_title{
-        font-size: 80px;
-        font-weight: 700;
-        line-height: 1.15;
-    }
     .grid_content{
         flex-direction: column;
         padding-left: 40px;
     }
-
     .camera_picture_wrap{  
         position: relative;
         margin-top: -65px;
@@ -659,6 +654,7 @@ main{
         left: 50%;
         margin-left: -573px;
     }
+
     .facetime_area{
         grid-column: span 6;
         .desc-large{
@@ -695,25 +691,8 @@ main{
     .grid{
         margin-top: -90px;
     }
-    .title{
-        font-size: 80px;
-        font-weight: 700;
-        line-height: 1.15;
-        margin-top: 41px; 
-        color: #a1a1b6;
-    }
-    headline-large
-    .sub_title{
-        font-size: 80px;
-        font-weight: 700;
-        line-height: 1.15;
-    }
-    .desc{
-        font-size: 28px;
-        font-weight: 500;
-        letter-spacing: .007em;
-        line-height: 1.25;
-        color: #a1a1b6;
+    .desc-medium{
+        color: #A1A1A6;
         max-width: 75%;
         margin-top: 0.8em;
     }
@@ -726,14 +705,12 @@ main{
         margin-left: -606.5px;
         margin-top: 70px;
     }
+
     .scissor_area{
         grid-column: span 6;
         background: linear-gradient(215deg, #c52d47 0%, #a5325c 30%, #8b366d 100%);
-        .sub_typo{
+        .desc-small{
             max-width: 480px;
-            font-size: 19px;
-            font-weight: 600;
-            line-height: 1.52632;
             margin-top: 0.77em;
         }
         .scissor_picture{
@@ -756,11 +733,6 @@ main{
             padding-left: 40px;
             z-index: 1;
         }
-        .main_typo{
-            font-size: 56px;
-            font-weight: 700;
-            line-height: 1.2;
-        }
         .trackpad_picture{
             width: 100%;
             height: 100%;
@@ -769,8 +741,8 @@ main{
             top: 0;
             left: 0;
         }
-
     }
+
     .touchid_area{
         grid-column: span 12;
         background: linear-gradient(229deg, #517281 0%, #3b5d70 27%, #4d5c82 72%, #5d647f 100%);
@@ -784,15 +756,13 @@ main{
         }
         .typo_area{
             grid-column: span 6;
-            p{
-                font-size: 32px;
-                font-weight: 600;
-                line-height: 1.21875;
-                max-width: 545px;
-                padding-bottom: 30px;
-                padding-right: 30px;
-            }
         }
+        .desc-large{
+            max-width: 545px;
+            padding-bottom: 30px;
+            padding-right: 30px;      
+        }
+
         .touchid_list{
             grid-column: span 5;
             display: flex;
@@ -841,18 +811,7 @@ main{
 } // sc_keyboard
 
 .sc_connect{
-    .title{
-        font-size: 80px;
-        font-weight: 700;
-        color: #a1a1a6;
-        margin-top: 41px;
-        line-height: 1.15;
-    }
-    .sub_title{
-        font-size: 80px;
-        font-weight: 700;
-        line-height: 1.15;
-    }
+
     .connect_picture{
         display: block;
         width: 3008px;
@@ -863,13 +822,9 @@ main{
         margin-top: 80px;
         margin-bottom: -160px;
     }
-
-    .sub_typo{
-        max-width: 450px;
-        line-height: 1.5263;
-        font-size: 19px;
-        font-weight: 600;
+    .desc-small{
         margin-top: 0.77em;
+        letter-spacing: .012em;  
     }
 
     .wifi_area{
@@ -885,16 +840,6 @@ main{
             width: 242px;
             height: 172px;
             margin: 0 auto 42px;
-        }
-        .wifi_headline{
-            font-size: 80px;
-            font-weight: 700;
-            line-height: 1.15;
-        }
-        .wifi_eyebrow{
-            font-size: 21px;
-            font-weight: 600;
-            line-height: 1.2858;
         }
     }
 
@@ -916,11 +861,6 @@ main{
         .usb_item{
             flex-basis: 41.66667%;
             max-width: 41.66667%;
-            .desc{
-                line-height: 1.2858;
-                font-size: 21px;
-                font-weight: 600;
-            }
         }
         .usb_item:first-child{
             margin-bottom: 95px;
@@ -951,7 +891,7 @@ main{
             height: 78px;
             margin: 10px auto 14px;
         }
-        .connect_picture{
+        .device_picture{
             display: block;
             width: 74px;
             height: 87px;
@@ -989,20 +929,18 @@ main{
         max-width: 41.66667%;
         margin-left: 8.3333%;
     }
-    
     .ar_picture{
         display: block;
         width: 54px;
         height: 62px;
     }
 
-    .title{
-        line-height: 1.1875;
+    .headline-small{
         max-width: 400px;
         margin-top: 27px;
-        font-size: 48px;
         font-weight: 600;
     }
+    
     .sub_title{
         max-width: 270px;
         font-size: 17px;
@@ -1016,7 +954,6 @@ main{
     .colorpick_area li{
         display: inline-block;
     }
-
     .item_wrap{
         flex-basis: 41.66667%;
         max-width: 41.66667%; 
@@ -1076,12 +1013,10 @@ main{
         border-radius: 30px;
         box-sizing: content-box;
     }
-    .title{
+
+    .headline-medium-large{
         max-width: 616px;
-        font-size: 64px;
-        line-height: 1.1719;
         text-align: center;
-        font-weight: 600;
         margin: 67px auto 0;
     }
     .link_more{
@@ -1158,7 +1093,6 @@ main{
             font-weight: 400;
         }
 
-
     }
     .compare2_picture{
         display: block;
@@ -1214,15 +1148,7 @@ main{
         align-items: center;
         background: #1d1d1f;
     }
-    h2{
-        font-size: 21px;
-        font-weight: 600;
-        line-height: 1.2858;
-    }
-    .sub_title{
-        font-size: 48px;
-        font-weight: 600;
-        line-height: 1.1875;
+    .headline-small{
         margin-top: 12px;
     }
     .desc{
@@ -1230,6 +1156,9 @@ main{
         font-weight: 400;
         margin-top: 0.8em;
         color: #fff;
+        width: 86%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .link_more{
@@ -1412,6 +1341,9 @@ main{
             transform: translate(-50%, -50%);
             z-index: 1;
             color: #fff;
+        }
+        .desc{
+            width: 100%;
         }
 
         .link_shop{

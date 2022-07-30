@@ -119,11 +119,15 @@ body { background: #000; color: #f5f5f7; font-family: 'SF Pro KR'; }
 
 .headline-large { font-size: 80px; font-weight: 700; line-height: 1.15; letter-spacing: 0em; }
 
+.headline-medium-large { font-size: 64px; font-weight: 600; line-height: 1.17188; letter-spacing: 0em; }
+
 .headline-medium { font-size: 56px; font-weight: 700; line-height: 1.2; }
 
 .headline-small { font-size: 48px; font-weight: 700; line-height: 1.1875; }
 
 .desc-large { font-size: 32px; font-weight: 600; line-height: 1.21875; letter-spacing: .004em; }
+
+.desc-medium-large { font-size: 21px; font-weight: 600; line-height: 1.2858; letter-spacing: .007em; }
 
 .desc-medium { font-size: 28px; font-weight: 500; line-height: 1.25; letter-spacing: .007em; }
 
@@ -203,7 +207,7 @@ header .link_bag { background-image: url(./../images/bag.svg); background-size: 
 
 #footer .benefits_wrap .benefits_column img { width: 100%; height: 56px; }
 
-#footer .benefits_wrap .benefits_title { font-size: 19px; line-height: 1.31579; font-weight: 600; letter-spacing: .012em; margin-top: 0.525em; display: block; }
+#footer .benefits_wrap .desc-small { margin-top: 0.525em; display: block; }
 
 #footer .benefits_wrap .desc { margin-top: 0.4em; }
 
@@ -485,8 +489,6 @@ main { overflow: hidden; }
 
 .sc_camera .desc-medium { color: #a1a1b6; max-width: 75%; margin-top: 0.8em; margin-bottom: 3.75%; }
 
-.sc_camera .sub_title { font-size: 80px; font-weight: 700; line-height: 1.15; }
-
 .sc_camera .grid_content { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding-left: 40px; }
 
 .sc_camera .camera_picture_wrap { position: relative; margin-top: -65px; -webkit-transform: translateY(87px); transform: translateY(87px); }
@@ -513,25 +515,19 @@ main { overflow: hidden; }
 
 .sc_keyboard .grid { margin-top: -90px; }
 
-.sc_keyboard .title { font-size: 80px; font-weight: 700; line-height: 1.15; margin-top: 41px; color: #a1a1b6; }
-
-.sc_keyboard headline-large .sub_title { font-size: 80px; font-weight: 700; line-height: 1.15; }
-
-.sc_keyboard .desc { font-size: 28px; font-weight: 500; letter-spacing: .007em; line-height: 1.25; color: #a1a1b6; max-width: 75%; margin-top: 0.8em; }
+.sc_keyboard .desc-medium { color: #A1A1A6; max-width: 75%; margin-top: 0.8em; }
 
 .sc_keyboard .keyboard_picture { display: block; width: 1213px; height: 701px; position: relative; left: 50%; margin-left: -606.5px; margin-top: 70px; }
 
 .sc_keyboard .scissor_area { grid-column: span 6; background: linear-gradient(215deg, #c52d47 0%, #a5325c 30%, #8b366d 100%); }
 
-.sc_keyboard .scissor_area .sub_typo { max-width: 480px; font-size: 19px; font-weight: 600; line-height: 1.52632; margin-top: 0.77em; }
+.sc_keyboard .scissor_area .desc-small { max-width: 480px; margin-top: 0.77em; }
 
 .sc_keyboard .scissor_area .scissor_picture { position: absolute; display: block; width: 100%; height: 100%; top: 60%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: initial; height: initial; }
 
 .sc_keyboard .trackpad_area { grid-column: span 6; }
 
 .sc_keyboard .trackpad_area .typo_area { max-width: 58.33333%; margin-top: 58px; padding-left: 40px; z-index: 1; }
-
-.sc_keyboard .trackpad_area .main_typo { font-size: 56px; font-weight: 700; line-height: 1.2; }
 
 .sc_keyboard .trackpad_area .trackpad_picture { width: 100%; height: 100%; position: absolute; z-index: 0; top: 0; left: 0; }
 
@@ -541,7 +537,7 @@ main { overflow: hidden; }
 
 .sc_keyboard .touchid_area .typo_area { grid-column: span 6; }
 
-.sc_keyboard .touchid_area .typo_area p { font-size: 32px; font-weight: 600; line-height: 1.21875; max-width: 545px; padding-bottom: 30px; padding-right: 30px; }
+.sc_keyboard .touchid_area .desc-large { max-width: 545px; padding-bottom: 30px; padding-right: 30px; }
 
 .sc_keyboard .touchid_area .touchid_list { grid-column: span 5; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; width: 100%; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; max-width: 520px; }
 
@@ -557,23 +553,15 @@ main { overflow: hidden; }
 
 .sc_keyboard .touchid_area .appletv_picture { display: block; width: 82px; height: 82px; }
 
-.sc_connect .title { font-size: 80px; font-weight: 700; color: #a1a1a6; margin-top: 41px; line-height: 1.15; }
-
-.sc_connect .sub_title { font-size: 80px; font-weight: 700; line-height: 1.15; }
-
 .sc_connect .connect_picture { display: block; width: 3008px; height: 342px; position: relative; left: 50%; margin-left: -1504px; margin-top: 80px; margin-bottom: -160px; }
 
-.sc_connect .sub_typo { max-width: 450px; line-height: 1.5263; font-size: 19px; font-weight: 600; margin-top: 0.77em; }
+.sc_connect .desc-small { margin-top: 0.77em; letter-spacing: .012em; }
 
 .sc_connect .wifi_area { grid-column: span 6; background-image: linear-gradient(30deg, #214079 1%, #663A7E 55%, #A82B7D 100%); }
 
 .sc_connect .wifi_area .grid_content { padding: 135px 0 128px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; }
 
 .sc_connect .wifi_area .wifi_picture { display: block; width: 242px; height: 172px; margin: 0 auto 42px; }
-
-.sc_connect .wifi_area .wifi_headline { font-size: 80px; font-weight: 700; line-height: 1.15; }
-
-.sc_connect .wifi_area .wifi_eyebrow { font-size: 21px; font-weight: 600; line-height: 1.2858; }
 
 .sc_connect .usb_area { grid-column: span 6; background-image: linear-gradient(201deg, #EF278E 0%, #81347F 47%, #43407A 100%); }
 
@@ -582,8 +570,6 @@ main { overflow: hidden; }
 .sc_connect .usb_area .usb_list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; width: 100%; padding: 135px 80px 128px; }
 
 .sc_connect .usb_area .usb_item { -ms-flex-preferred-size: 41.66667%; flex-basis: 41.66667%; max-width: 41.66667%; }
-
-.sc_connect .usb_area .usb_item .desc { line-height: 1.2858; font-size: 21px; font-weight: 600; }
 
 .sc_connect .usb_area .usb_item:first-child { margin-bottom: 95px; }
 
@@ -597,7 +583,7 @@ main { overflow: hidden; }
 
 .sc_connect .usb_area .transfer_picture { display: block; width: 64px; height: 78px; margin: 10px auto 14px; }
 
-.sc_connect .usb_area .connect_picture { display: block; width: 74px; height: 87px; margin: 0 auto 14px; }
+.sc_connect .usb_area .device_picture { display: block; width: 74px; height: 87px; margin: 0 auto 14px; }
 
 .sc_ar { padding-top: 25px; background: #151516; overflow: hidden; margin-top: 145px; }
 
@@ -609,7 +595,7 @@ main { overflow: hidden; }
 
 .sc_ar .ar_picture { display: block; width: 54px; height: 62px; }
 
-.sc_ar .title { line-height: 1.1875; max-width: 400px; margin-top: 27px; font-size: 48px; font-weight: 600; }
+.sc_ar .headline-small { max-width: 400px; margin-top: 27px; font-weight: 600; }
 
 .sc_ar .sub_title { max-width: 270px; font-size: 17px; font-weight: 600; margin-top: 0.8em; }
 
@@ -635,7 +621,7 @@ main { overflow: hidden; }
 
 .sc_compare .compare_wrap { width: 100%; max-width: 1340px; margin-left: 24px; margin-right: 24px; background: #1d1d1f; padding-left: 24px; padding-right: 24px; border-radius: 30px; -webkit-box-sizing: content-box; box-sizing: content-box; }
 
-.sc_compare .title { max-width: 616px; font-size: 64px; line-height: 1.1719; text-align: center; font-weight: 600; margin: 67px auto 0; }
+.sc_compare .headline-medium-large { max-width: 616px; text-align: center; margin: 67px auto 0; }
 
 .sc_compare .link_more { color: #2997ff; margin-left: auto; margin-right: auto; margin-top: 43px; margin-bottom: 81px; display: block; text-align: center; font-size: 21px; font-weight: 400; }
 
@@ -683,11 +669,9 @@ main { overflow: hidden; }
 
 .sc_service .grid_item { min-height: 600px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background: #1d1d1f; }
 
-.sc_service h2 { font-size: 21px; font-weight: 600; line-height: 1.2858; }
+.sc_service .headline-small { margin-top: 12px; }
 
-.sc_service .sub_title { font-size: 48px; font-weight: 600; line-height: 1.1875; margin-top: 12px; }
-
-.sc_service .desc { font-size: 17px; font-weight: 400; margin-top: 0.8em; color: #fff; }
+.sc_service .desc { font-size: 17px; font-weight: 400; margin-top: 0.8em; color: #fff; width: 86%; margin-left: auto; margin-right: auto; }
 
 .sc_service .link_more { color: #2997ff; font-size: 17px; font-weight: 400; display: block; margin-top: 0.8em; }
 
@@ -736,6 +720,8 @@ main { overflow: hidden; }
 .sc_service .business_area .business_picture { display: block; width: 682px; height: 600px; position: absolute; left: 50%; margin-left: -341px; top: 0; z-index: 0; }
 
 .sc_service .business_area .main_title { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 1; color: #fff; }
+
+.sc_service .business_area .desc { width: 100%; }
 
 .sc_service .business_area .link_shop { display: block; margin-top: 0.8em; color: #fff; font-size: 17px; }
 

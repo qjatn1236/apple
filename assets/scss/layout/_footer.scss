@@ -19,6 +19,7 @@
         font-weight: 400;
         letter-spacing: -.016em;
         border-bottom: 1px solid #424245;
+
         .benefits_column{
             max-width: 410px;
             flex: 1 25%;
@@ -33,12 +34,8 @@
                 height: 56px;
             }
         }
-
-        .benefits_title{
-            font-size: 19px;
-            line-height: 1.31579;
-            font-weight: 600;
-            letter-spacing: .012em;
+          
+        .desc-small{
             margin-top: 0.525em;
             display: block;
         }
