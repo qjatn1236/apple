@@ -111,17 +111,17 @@ body{
   letter-spacing: .004em;
 }
 
-.desc-medium-large{
-  font-size:21px;
-  font-weight: 600;
-  line-height: 1.2858;
-  letter-spacing: .007em;
-}
-
 .desc-medium{
   font-size:28px;
   font-weight: 500;
   line-height: 1.25;
+  letter-spacing: .007em;
+}
+
+.desc-medium-large{
+  font-size:21px;
+  font-weight: 600;
+  line-height: 1.2858;
   letter-spacing: .007em;
 }
 
@@ -144,10 +144,23 @@ body{
 }
 
 @include tablet{
-  .headline-large{font-size:64px;}
-  .headline-medium{font-size:40px;}
-  .desc-large{font-size:28px;}
-  .desc-medium{font-size:28px;}
+  .headline-large{
+    font-size:64px;
+    line-height: 1.17188;
+  }
+
+  .headline-medium{
+    font-size:40px;
+  }
+
+  .desc-large{
+    font-size:28px;
+  }
+
+  .desc-medium{
+    font-size:24px;
+  }
+
 }
 
 @include mobile{
@@ -196,5 +209,8 @@ body{
   background-color: #151516;
   border-radius:30px;
   min-height: 700px;
+  @include tablet{
+    min-height: 680px;
+  }
 }
 

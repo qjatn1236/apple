@@ -116,6 +116,10 @@ main{
         justify-content: center;
         max-width: 100%;
         margin-top: 32px;
+        margin-bottom: 0.4em;
+        @include tablet{
+            margin-top: 18px;
+        }
     }
     .main_pdr_item{
         font-size: 28px;
@@ -128,6 +132,9 @@ main{
         }
         &:last-child:hover{
             text-decoration: underline;
+        }
+        @include tablet{
+            font-size: 24px;
         }
     }
 } // sc_main_pdr 
@@ -143,6 +150,9 @@ main{
     }
     .title{
         margin-top: 41px;
+        @include tablet{
+            margin-top: -3px;
+        }
     }
     .sub_title{
         font-size: 80px;
@@ -150,15 +160,28 @@ main{
         font-weight: 700;
         letter-spacing: -.015em;
         color: #f5f5f7;
+        @include tablet{
+            line-height: 1.17188;
+            font-size: 64px;
+        }
     }
     .desc-medium{
-        font-size:28px;
-        font-weight: 500;
-        line-height: 1.25;
-        letter-spacing: .007em;
         max-width: 75%;
+        flex-basis: 75%;
         color: #a1a1a6;
         margin-top: 0.8em;
+        @include tablet{
+            flex-basis: 91.66667%;
+            max-width: 91.66667%;    
+        }
+    }
+    .vod_wrap{
+        margin-top: -158px;
+        @include tablet{
+            margin-top: -96px;
+            margin-bottom: 75px;
+            z-index: 3;
+        }
     }
     video{
         display: block;
@@ -167,29 +190,42 @@ main{
         position: relative;
         left: 50%;
         margin-left: -877px;
-        margin-top: -158px;
         z-index: -1;
+        @include tablet{
+            display: block;
+            width: 1068px;
+            height: 840px;
+            margin-left: -534px;
+        }
     }
 }
 
 .sc_parts{
-    margin: -144px auto 0;
+    margin-top: -144px;
 
     .cpu_area{
         grid-column: span 12;
         overflow: hidden;
         background: linear-gradient(to right top, #194189 0%, #3B4980 25%, #8738A7 100%);    
         .typo_warp{
+            max-width: 50%;
             padding-left: 40px;
             margin: 60px 0;
             z-index: 1;
         }
         .headline-large{
             max-width: 600px;
+            @include tablet{
+                max-width: 450px;
+            }
         }
         .desc-small{
             margin-top: 26px;
             max-width: 470px;
+            @include tablet{
+                margin-top: 23px;
+                max-width: 400px;
+            }
         }
         .title_point{
             color: #c48cfc;
@@ -201,6 +237,11 @@ main{
             position: absolute;
             left: 50%;
             bottom: 28px;
+            @include tablet{
+                width: 516px;
+                height: 508px;
+                left:calc((((100vw - 735px) / 333) * 120) + 384px);
+            }
         }
     }
 
@@ -214,10 +255,16 @@ main{
             padding-left: 40px;
             margin: 60px 0;
             z-index: 1;
+            @include tablet{
+                margin: 45px 0;
+            }
         }
         .headline-large{
             flex: 1;
             max-width: 580px;
+            @include tablet{
+                max-width: 430px;
+            }
         }
         .desc-small{
             flex: 1;
@@ -244,19 +291,34 @@ main{
     .battery_area{
         grid-column: span 8;
         background: linear-gradient(to bottom, #203025 0%, #151516 100%);
-
+        @include tablet{
+            grid-column: span 6;
+        }
+        .grid_center{
+            margin-bottom: 65px;
+        }
         .typo_area{
             justify-content: flex-start;
             max-width: 620px;
-            margin: 0 auto;
-            margin-bottom: 65px;
+            margin: 60px auto;
             text-align: center;
             z-index: 1;
+            padding-bottom: 14px;
+
+            @include tablet{
+                padding-left: 40px;
+                padding-right: 40px;
+                margin: 45px auto;
+                max-width: unset;
+            }
         }
     }
 
     .efficiency_area{
         grid-column: span 4;
+        @include tablet{
+            grid-column: span 6;
+        }
         background: linear-gradient(225deg, #1623A6 0%, #3343D4 29%, #175EAC 73%, #176682 100%);
         .typo_area{
             padding-left: 40px;
@@ -264,6 +326,9 @@ main{
             max-width: 100%;
             margin: 60px 0;
             z-index: 1;
+            @include tablet{
+                margin: 45px 0;
+            }
         }
         .typo_point{
             color: rgba(255,255,255,0.6)
@@ -290,9 +355,17 @@ main{
             margin-top: 60px;
             margin-bottom: 60px;
             margin-left: 50%;
+            @include tablet{
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
         }
         .desc-large{
             padding: 0 40px;
+            @include tablet{
+                letter-spacing: .007em;
+                line-height: 1.25;
+            }
         }
         .title_point{
             color: #a1a1a6;
@@ -305,6 +378,12 @@ main{
             right: 50%;
             bottom: -249px;
             transform: translateY(-50%); 
+            @include tablet{
+                display: block;
+                width: 516px;
+                bottom: -226px;
+                height: 507px;
+            }
         }
     }
     .os_area{
@@ -322,13 +401,23 @@ main{
             flex-basis: 50%;
             margin: 60px 0;
             padding-left: 40px;
+            @include tablet{
+                margin: 45px 0;
+            }
         }
         .headline-medium{
             max-width: 420px;
+            @include tablet{
+                max-width: 320px;
+            }
         }
         .desc-small{
             max-width: 470px;
             margin-top: 26px;
+            @include tablet{
+                max-width: 400px;
+                margin-top: 23px;
+            }
         }
         .os_picture{
             display: block;
@@ -338,6 +427,12 @@ main{
             z-index: 1;
             left: 50%;
             bottom: 28px;
+            @include tablet{
+                display: block;
+                width: 592px;
+                height: 469px;
+                left: calc((((100vw - 735px) / 333) * 120) + 384px);
+            }
         }
     }
 
@@ -348,6 +443,9 @@ main{
         .desc-small{
             margin-top: 0.77em;
             padding: 0px 40px;
+            @include tablet{
+                margin-top: 1em;  
+            }
         }
         .grid_bottom{
             display: flex;
@@ -363,9 +461,22 @@ main{
             margin-left: auto;
             margin-bottom: 74px;
             max-width: 420px;
+            @include tablet{
+                max-width: 320px;
+            }
+        }
+        .headline-large{
+            margin-bottom: -14px;
+            margin-top: 0.4em;
+            @include tablet{
+                margin-bottom: -11px;
+            }
         }
         .title_point{
             margin-left: 25px;
+            @include tablet{
+                margin-left: 20px;
+            }
         }
     }
 
@@ -377,6 +488,9 @@ main{
         .desc-small{
             margin-top: 0.77em;
             padding: 0 40px;
+            @include tablet{
+                margin-top: 1em;  
+            }
         }
         .grid_bottom{
             display: flex;
@@ -393,11 +507,19 @@ main{
             margin-left: -240.5px;
             transform: translate(-1px, 12px);
             margin-bottom: 74px;
+            @include tablet{
+                width: 341px;
+                margin-left: -170.5px;
+                height: 274px;
+            }
         }
     }
 
     .memory_area{
         grid-column: span 4;
+        @include tablet{
+            grid-column: span 6;
+        }
         position: relative;
         .memory_inner{
             width: 100%;
@@ -434,6 +556,9 @@ main{
 
     .storage_area{
         grid-column: span 4;
+        @include tablet{
+            grid-column: span 6;
+        }
         background: linear-gradient(to right top, #604C7C 0%, #257983 50%, #20825A 100%);
         .content_wrap{
             text-align: center;
@@ -470,6 +595,9 @@ main{
 
     .security_area{
         grid-column: span 4;
+        @include tablet{
+            grid-column: span 12;
+        }
         .content_warp{
             width: 100%;
         }
