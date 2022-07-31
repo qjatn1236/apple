@@ -100,7 +100,7 @@ body{
 
 .headline-small{
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.1875;
 }
 
@@ -118,7 +118,7 @@ body{
   letter-spacing: .007em;
 }
 
-.desc-medium-large{
+.desc-medium-small{
   font-size:21px;
   font-weight: 600;
   line-height: 1.2858;
@@ -144,21 +144,40 @@ body{
 }
 
 @include tablet{
+  .sc_title{
+    font-size:64px;
+    line-height: 1.17188;
+    margin-top: -3px;
+  }
+
   .headline-large{
     font-size:64px;
     line-height: 1.17188;
   }
 
+  .headline-medium-large{
+    font-size:48px;
+    line-height: 1.1875;
+  }
+  
   .headline-medium{
     font-size:40px;
+  }
+  
+  .headline-small{
+    font-size: 40px;
+    line-height: 1.15;  
   }
 
   .desc-large{
     font-size:28px;
+    line-height: 1.25;
   }
-
+  
   .desc-medium{
     font-size:24px;
+    line-height: 1.29167;
+    letter-spacing: .009em;
   }
 
 }
@@ -214,3 +233,15 @@ body{
   }
 }
 
+// br 
+.br_desktop{
+  @include tablet{
+    display: none;  
+  }
+}
+.br_tablet{
+display: none;
+  @include tablet{
+    display: block;  
+  }
+}

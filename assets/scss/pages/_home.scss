@@ -571,6 +571,9 @@ main{
             font-weight: 700;
             padding-top: 4px;
             padding-bottom: 2px;
+            @include tablet{
+                line-height: 1;
+            }
         }
         .sub_value{
             font-size: 64px;
@@ -586,6 +589,10 @@ main{
             z-index: 1;
             font-size: 24px;
             font-weight: 500;
+            line-height: 1.25;
+            @include tablet{
+                line-height: 1.29167;
+            }
         }
         .desc-small{
             padding: 0 85px;
@@ -600,6 +607,16 @@ main{
         }
         .content_warp{
             width: 100%;
+            margin: 60px 0;
+            @include tablet{
+                margin: 45px 0;
+            }
+        }
+        .headline-small{
+            @include tablet{
+                font-size: 60px;
+                font-weight:700;
+            }
         }
         .privacy_btn_wrap{
             padding: 0 40px 40px 40px;
@@ -645,10 +662,19 @@ main{
         .sc_title{
             margin-top:41px;
         }
+        .headline-large{
+            @include tablet{
+                max-width: 75%;
+            }
+        }
         .desc-medium{
             max-width: 75%;
             margin-top: 0.8em;
             color: #a1a1a6;
+            @include tablet{
+                flex-basis: 91.66667%;
+                max-width: 91.66667%;
+            }
         }
     }
     .retina_picture_wrap{
@@ -664,6 +690,14 @@ main{
         top: 43px;
         position: absolute;
         z-index: 1;
+        @include tablet{
+            display: block;
+            width: 657px;
+            height: 411px;
+            left: 50%;
+            margin-left: -328.5px;
+            top: 33px;
+        }
     }
     .retina_picture_hdr{
         display: block;
@@ -672,32 +706,52 @@ main{
         position: relative;
         left: 50%;
         margin-left: -598.5px;
+        @include tablet{
+            display: block;
+            width: 849px;
+            left: 50%;
+            margin-left: -424.5px;
+            height: 500px;
+        }
     }
 
     .color_area{
         grid-column: span 12;
         position: relative;
-
         .headline-large {
             position: relative;
             max-width: 580px;
             padding-left: 40px;
             z-index: 1;
+            margin: 60px 0;
+            @include tablet{
+                max-width: 460px;
+            }
         }
         .sub_typo{
             flex-grow: 1;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin: 60px 0;
+            text-align: center;
             .value{
                 font-size: 144px;
                 line-height: 1.14615;
                 font-weight: 700;
                 letter-spacing: -.015em;
                 display: block;
+                @include tablet{
+                    font-size: 96px;
+                    line-height: 1;
+                }
             }
             .sub_value{
                 font-size: 96px;
+                @include tablet{
+                    font-size: 64px;
+                    line-height: 1.17188;
+                }
             }
             .desc-medium{
                 display: block;
@@ -710,6 +764,9 @@ main{
             z-index: 0;
             top: 0;
             left: 0;
+            img{
+                object-fit: cover;
+            }
         }
         
     } // color_area
@@ -723,6 +780,10 @@ main{
         .pixel_content_wrap{
             flex-basis:100%;
             padding: 0 40px;
+            margin: 60px 0;
+            @include tablet{
+                margin: 45px 0;
+            }
         }
         .pixel_picture{
             display: block;
@@ -733,6 +794,13 @@ main{
             margin-left: -180px;
             margin-top: 19px;
             margin-bottom: 8px;
+            @include tablet{
+                display: block;
+                width: 290px;
+                height: 132px;
+                left: 50%;
+                margin-left: -145px;
+            }
         }
         .headline-large{
             text-align: center;
@@ -746,6 +814,9 @@ main{
             margin: 70px 0 60px;
             padding-left:40px;
             flex-basis: 100%;
+            @include tablet{
+                margin: 70px 0 45px;
+            }
         }
         .content_wrap{
             flex-basis: 91.66667%;
@@ -764,6 +835,14 @@ main{
             left: 50%;
             margin-left: -146px;
             margin-top: 52px;
+            @include tablet{
+                display: block;
+                width: 242px;
+                left: 50%;
+                margin-left: -121px;
+                margin-top: 40px;
+                height: 242px;
+            }
         }
         .truetone_bg_picture{
             width: 100%;
@@ -773,24 +852,26 @@ main{
             top: 0;
             left: 0;
         }
-
     }
 } // sc_retina
 
 .sc_camera{
-    .title{
-        font-size:80px;
-        font-weight: 700;
-        line-height: 1.15;
-        letter-spacing: 0em;
-        margin-top: 41px;
-        color: #a1a1a6;
+    .headline-large{
+        flex-basis: 91.66667%;
+        max-width: 91.66667%;    
     }
     .desc-medium{
         color: #a1a1b6;
         max-width: 75%;
         margin-top: 0.8em;
         margin-bottom: 3.75%;
+        flex-basis: 75%;
+        max-width: 75%;
+        @include tablet{
+            flex-basis: 91.66667%;
+            max-width: 91.66667%;
+            margin-bottom: 4%;
+        }
     }
     .grid_content{
         flex-direction: column;
@@ -810,6 +891,12 @@ main{
         top: 4.5%;
         position: absolute;
         z-index: 1;
+        @include tablet{
+            width: 750px;
+            margin-left: -375px;
+            top: 4%;
+            height: 224px;
+        }
     }
     .camera_picture_hdr{
         display: block;
@@ -818,6 +905,11 @@ main{
         position: relative;
         left: 50%;
         margin-left: -573px;
+        @include tablet{
+            width: 800px;
+            margin-left: -400px;
+            height: 478px;
+        }
     }
 
     .facetime_area{
@@ -860,6 +952,9 @@ main{
         color: #A1A1A6;
         max-width: 75%;
         margin-top: 0.8em;
+        @include tablet{
+            max-width: 600px;
+        }
     }
     .keyboard_picture{
         display: block;
@@ -869,6 +964,12 @@ main{
         left: 50%;
         margin-left: -606.5px;
         margin-top: 70px;
+        @include tablet{
+            width: 856px;
+            height: 520px;
+            margin-left: -428px;
+            margin-top: 56px;
+        }
     }
 
     .scissor_area{
@@ -877,6 +978,9 @@ main{
         .desc-small{
             max-width: 480px;
             margin-top: 0.77em;
+            @include tablet{
+                max-width: 400px;
+            }
         }
         .scissor_picture{
             position: absolute;
@@ -888,6 +992,16 @@ main{
             transform: translate(-50%, -50%);
             width: initial;
             height: initial;
+            @include tablet{
+                display: block;
+                width: 100%;
+                height: 100%;
+                max-width: 250px;
+                top: 62%;
+            }
+            img{
+                object-fit: contain;
+            }
         }
     }
     .trackpad_area{
@@ -905,6 +1019,9 @@ main{
             z-index: 0;
             top: 0;
             left: 0;
+            img{
+                object-fit: cover;
+            }
         }
     }
 
@@ -918,6 +1035,8 @@ main{
             margin-top:62px;
             padding-left: 40px;
             flex-grow: 1;
+            padding: 0 40px;
+            box-sizing: border-box;
         }
         .typo_area{
             grid-column: span 6;
@@ -925,9 +1044,12 @@ main{
         .desc-large{
             max-width: 545px;
             padding-bottom: 30px;
-            padding-right: 30px;      
+            padding-right: 30px; 
+            @include tablet{
+                max-width: 400px;
+                padding-right: 20px;
+            }     
         }
-
         .touchid_list{
             grid-column: span 5;
             display: flex;
@@ -936,12 +1058,19 @@ main{
             width: 100%;
             justify-content: space-between;
             max-width: 520px;
+            @include tablet{
+                max-width: 480px;
+                grid-column: span 6;
+            }
             li{
                 display: flex;
                 flex-direction: column;
                 max-width: 41.66667%;
                 flex-basis: 41.66667%;
                 margin-bottom: 90px;
+                @include tablet{
+                    margin-bottom: 82px;
+                }
             }
             .desc{
                 max-width: 200px;
@@ -986,6 +1115,13 @@ main{
         margin-left: -1504px;
         margin-top: 80px;
         margin-bottom: -160px;
+        @include tablet{
+            width: 1068px;
+            height: 241px;
+            margin-left: -534px;
+            margin-top: 80px;
+            margin-bottom: -100px;
+        }
     }
     .desc-small{
         margin-top: 0.77em;
@@ -995,10 +1131,19 @@ main{
     .wifi_area{
         grid-column: span 6;
         background-image: linear-gradient(30deg, #214079 1%, #663A7E 55%, #A82B7D 100%);
+        .desc-small{
+            max-width: 450px;
+            @include tablet{
+                max-width: 390px;
+            }
+        }
         .grid_content{
             padding: 135px 0 128px;
             justify-content: center;
             text-align: center;
+            @include tablet{
+                padding: 91px 0 103px;
+            }
         }
         .wifi_picture{
             display: block;
@@ -1011,7 +1156,12 @@ main{
     .usb_area{
         grid-column: span 6;
         background-image: linear-gradient(201deg, #EF278E 0%, #81347F 47%, #43407A 100%);
-        
+        .desc-small{
+            max-width: 450px;
+            @include tablet{
+                max-width: 390px;
+            }
+        }
         .grid_content{
             justify-content: center;
             text-align: center;
@@ -1022,6 +1172,9 @@ main{
             flex-direction: row;
             width: 100%;
             padding: 135px 80px 128px;
+            @include tablet{
+                padding: 97px 40px 93px;
+            }
         }
         .usb_item{
             flex-basis: 41.66667%;
@@ -1029,10 +1182,16 @@ main{
         }
         .usb_item:first-child{
             margin-bottom: 95px;
+            @include tablet{
+                margin-bottom: 70px;
+            }
         }
         .usb_item:nth-child(2){
             margin-bottom: 95px;
             margin-left: 16.66667%;
+            @include tablet{
+                margin-bottom: 70px;
+            }
         }
         .usb_item:nth-child(4){
             margin-left: 16.66667%;
@@ -1098,12 +1257,20 @@ main{
         display: block;
         width: 54px;
         height: 62px;
+        @include tablet{
+            display: block;
+            width: 31px;
+            height: 36px;
+        }
     }
-
     .headline-small{
         max-width: 400px;
         margin-top: 27px;
         font-weight: 600;
+        @include tablet{
+            max-width: 295px;
+            margin-top: 13px;
+        }
     }
     
     .sub_title{
@@ -1122,6 +1289,12 @@ main{
     .item_wrap{
         flex-basis: 41.66667%;
         max-width: 41.66667%; 
+        @include tablet{
+            display: flex;
+            justify-content: center;
+            flex-basis: 50%;
+            max-width: 50%;
+        }
     }
     .item_area{
         margin-left: 75px;
@@ -1130,10 +1303,20 @@ main{
         display: block;
         width: 405px;
         height: 551px;
+        @include tablet{
+            display: block;
+            width: 309px;
+            height: 404px;
+        }
         picture{
             display: block;
             width: 405px;
             height: 551px;
+            @include tablet{
+                display: block;
+                width: 309px;
+                height: 404px;
+            }
         }
     }
     .item_space{
